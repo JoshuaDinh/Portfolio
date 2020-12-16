@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display SC", serif;
+}
+a {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+p {
+  font-size: 12px;
+  color: #61dafb;
+}
+.iconTitles-active {
+  color: #6f42c1;
+}
+
+.app__icon {
+  height: 60px;
+}
+
+.app__personalInfo {
+  color: #61dafb;
+  position: absolute;
+  top: 2%;
+  right: 6%;
+  cursor: pointer;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app__icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app__projectArrow {
+  width: 10%;
+  height: 15%;
+  border: 3px solid #61dafb;
+  position: relative;
+  top: 45%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 1.5s ease-in-out;
+  padding: 10px;
+}
+.app__projectArrow :after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 30%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #6f42c1; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.app__projectArrow > img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.app__projectArrow > span {
+  transform: rotate(-90deg);
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  color: #61dafb;
+}
+.openProjects-active {
+  left: 20%;
+  transition: 1s ease-in-out;
+  border: none;
+}
+
+.app__disable-particles > span {
+  display: flex;
+  align-items: center;
+  color: #6f42c1;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  left: 15px;
+  margin-top: 10px;
+}
+
+.app__resume {
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  font-size: 24px;
+  border-bottom: 3px solid #6f42c1;
+  color: #61dafb;
+  letter-spacing: 1.6px;
+}
+
+.app__resume::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #6f42c1;
+  position: relative;
+  top: 20px;
+  left: 27%;
+}
+
+@media only screen and (max-width: 1153px) {
+  .app__icons {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 1153px) {
+  .app__icons {
+    display: grid;
+  }
+  .app__resume {
+    left: 80%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .app__resume {
+    left: 77%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .app__resume {
+    left: 76%;
+  }
+}
