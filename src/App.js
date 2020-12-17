@@ -8,8 +8,10 @@ import AddIcon from "@material-ui/icons/Add";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import CallIcon from "@material-ui/icons/Call";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import miniLogo from "./imgs/miniLogo.gif";
-import video from "./imgs/video.mp4";
+import video from "./imgs/video2.mp4";
+import video2 from "./imgs/face.mp4";
 import resume from "./imgs/Resume.pdf";
 
 const App = () => {
@@ -25,7 +27,15 @@ const App = () => {
         <source src={video} type="video/mp4" />
       </video>
       <div className="app__personalInfo">
+        <video className="vid2" autoPlay muted loop>
+          <source src={video2} type="video/mp4" />
+        </video>
         <h2>Joshua Dinh</h2>
+        {/* <div className="app__resume">
+          <a href={resume} target="_blank" rel="noreferrer">
+            Resume
+          </a>
+        </div> */}
         <div className="app__icons">
           <a
             href="https://www.linkedin.com/in/joshuahungdinh/"
@@ -66,6 +76,10 @@ const App = () => {
             />
             <p className={`${github && "iconTitles-active"}`}>Github</p>
           </a>
+          <a href={resume} target="_blank" rel="noreferrer">
+            <PictureAsPdfIcon />
+            <p className={`${github && "iconTitles-active"}`}>Resume</p>
+          </a>
         </div>
       </div>
 
@@ -96,11 +110,7 @@ const App = () => {
         <img src={miniLogo} />
         <ArrowRightIcon fontSize="large" style={{ color: "#61dbfb" }} />
       </div>
-      <div className="app__resume">
-        <a href={resume} target="_blank" rel="noreferrer">
-          Resume
-        </a>
-      </div>
+
       {particles && (
         <MouseParticles
           g={1}

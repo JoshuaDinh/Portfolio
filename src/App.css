@@ -8,13 +8,16 @@ a {
   color: #61dafb;
 }
 
+h2 {
+  color: #61dafb;
+  font-family: "Tangerine", cursive;
+  border-bottom: 1px solid #6f42c1;
+  width: 30%;
+}
+
 p {
   font-size: 12px;
   color: #61dafb;
-}
-
-h1 {
-  font-family: "Tangerine", cursive;
 }
 .iconTitles-active {
   color: #6f42c1;
@@ -25,17 +28,30 @@ h1 {
 }
 
 .app__personalInfo {
-  color: #61dafb;
+  font-size: 26px;
   position: absolute;
-  top: 2%;
-  right: 6%;
+  top: 35%;
+  right: 3%;
   cursor: pointer;
-  width: 15%;
+  width: 45%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid #61dafb;
+  padding: 15px;
+  border-radius: 15px;
+  z-index: 10000000;
+  background: rgb(0, 0, 0);
 }
 
+.vid2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  border-radius: 15px;
+}
 .app__icons {
   display: flex;
   justify-content: space-around;
@@ -63,7 +79,6 @@ video {
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -89,7 +104,8 @@ video {
 .app__projectArrow {
   width: 10%;
   height: 15%;
-  border: 3px solid #61dafb;
+  border: 2px solid #61dafb;
+  border-radius: 15px;
   position: relative;
   top: 45%;
   left: 5%;
@@ -137,12 +153,10 @@ video {
 }
 
 .app__resume {
-  position: absolute;
-  top: 50%;
-  left: 83%;
   font-size: 24px;
   border-bottom: 3px solid #6f42c1;
-  color: #61dafb;
+  color: white;
+
   letter-spacing: 1.6px;
 }
 

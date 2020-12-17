@@ -10,9 +10,13 @@ const Sidebar = ({ openProjects }) => {
     <div
       className={`sidebar ${openProjects && "openProjects__sidebar-active"}`}
     >
-      <SideDrawer title="Bitcoin Dashboard" image={bitcoin} />
-      <SideDrawer title="Covid-19 Stats" image={covid} />
-      <SideDrawer title="Netflix Clone" image={netflix} />
+      <SideDrawer title="Bitcoin Dashboard" image={bitcoin} link="/crypto" />
+      <SideDrawer title="Covid-19 Stats" image={covid} link="/covid19" />
+      <SideDrawer
+        title="Netflix Clone"
+        image={netflix}
+        link="www.joshuadinh.tech/covid19"
+      />
     </div>
   );
 };
