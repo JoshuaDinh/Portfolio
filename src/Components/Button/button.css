@@ -1,13 +1,11 @@
 .button {
   color: grey;
   z-index: 1000000000;
-  position: absolute;
-  bottom: 4%;
-  right: 5%;
+
   display: flex;
 }
 
-.button__container {
+.button__container-left {
   height: 3rem;
   width: 3rem;
   margin: 5px;
@@ -17,4 +15,66 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 4%;
+  right: 10%;
+}
+.button__container-right {
+  height: 3rem;
+  width: 3rem;
+  margin: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color: #cfe67e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+}
+
+.button__project-left {
+  position: absolute;
+  animation: left 1.5s;
+  animation-fill-mode: both, forwards, none;
+}
+.button__project-right {
+  position: absolute;
+  animation: right 1.5s;
+  animation-fill-mode: both, forwards, none;
+}
+
+@keyframes left {
+  0% {
+    bottom: 4%;
+    right: 10%;
+  }
+  20% {
+    right: 65%;
+  }
+
+  100% {
+    bottom: 50%;
+    right: 65%;
+    background: white;
+    color: black;
+  }
+}
+
+@keyframes right {
+  0% {
+    bottom: 4%;
+    right: 0.4%;
+  }
+  20% {
+    right: 0.4;
+  }
+
+  100% {
+    bottom: 50%;
+    right: 0.4%;
+    background: white;
+    color: black;
+  }
 }

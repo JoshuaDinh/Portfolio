@@ -6,16 +6,21 @@ import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import resume from "../../imgs/Resume.pdf";
 import "./sidebar.css";
 
-const Nav = () => {
+const Nav = ({ openProjects }) => {
   const [linkedIn, setLinkedIn] = useState(false);
   const [github, setGithub] = useState(false);
   const [email, setEmail] = useState(false);
   const [resume, setResume] = useState(false);
+
   return (
-    <div className="nav ">
+    <div className="nav">
       <h1>Joshua Dinh</h1>
-      <div className="nav__icons ">
-        <div className="nav__container">
+      <div className={`nav__icons ${openProjects && "nav__icons-project"}`}>
+        <div
+          className={`nav__container ${
+            openProjects && "nav__container-projects"
+          }`}
+        >
           {" "}
           <a
             href={resume}
@@ -32,8 +37,11 @@ const Nav = () => {
           <p className={`${resume && "iconTitles-active"}`}>Resume</p>
         </div>
 
-        <div className="nav__container">
-          {" "}
+        <div
+          className={`nav__container ${
+            openProjects && "nav__container-projects"
+          }`}
+        >
           <a
             className="app__icon"
             onMouseEnter={() => setEmail(true)}
@@ -46,7 +54,11 @@ const Nav = () => {
           </a>
           <p className={`${email && "iconTitles-active"}`}>Contact</p>
         </div>
-        <div className="nav__container">
+        <div
+          className={`nav__container ${
+            openProjects && "nav__container-projects"
+          }`}
+        >
           {" "}
           <a
             href="https:github.com/JoshuaDinh?tab=repositories "
@@ -63,7 +75,11 @@ const Nav = () => {
           </a>
           <p className={`${github && "iconTitles-active"}`}>Github</p>
         </div>
-        <div className="nav__container">
+        <div
+          className={`nav__container ${
+            openProjects && "nav__container-projects"
+          }`}
+        >
           {" "}
           <a
             href="https:www.linkedin.com/in/joshuahungdinh/"

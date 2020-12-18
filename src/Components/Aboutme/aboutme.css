@@ -1,0 +1,39 @@
+.aboutMe {
+  background-color: rgb(172, 172, 172);
+  position: absolute;
+  height: 400px;
+  z-index: 100000;
+  border: 1px solid rgb(207, 207, 207);
+  top: 30%;
+  left: 3%;
+  width: 20%;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #cfe67e; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cfe67e;
+  }
+}
