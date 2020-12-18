@@ -5,58 +5,16 @@
 }
 a {
   text-decoration: none;
-  color: #61dafb;
-}
-
-h2 {
-  color: #61dafb;
-  font-family: "Tangerine", cursive;
-  border-bottom: 1px solid #6f42c1;
-  width: 30%;
+  color: black;
 }
 
 p {
   font-size: 12px;
-  color: #61dafb;
-}
-.iconTitles-active {
-  color: #6f42c1;
+  color: black;
 }
 
-.app__icon {
-  height: 60px;
-}
-
-.app__personalInfo {
-  font-size: 26px;
-  position: absolute;
-  top: 35%;
-  right: 3%;
-  cursor: pointer;
-  width: 45%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 2px solid #61dafb;
-  padding: 15px;
-  border-radius: 15px;
-  z-index: 10000000;
-  background: rgb(0, 0, 0);
-}
-
-.vid2 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -100;
-  border-radius: 15px;
-}
-.app__icons {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 30px;
+body {
+  overflow: hidden;
 }
 
 .App {
@@ -71,25 +29,15 @@ p {
 
 video {
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
+  height: 91vh;
   position: fixed;
   top: 0;
-  left: 0;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  right: 0;
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -104,16 +52,17 @@ video {
 .app__projectArrow {
   width: 10%;
   height: 15%;
-  border: 2px solid #61dafb;
+  border: 3px solid white;
   border-radius: 15px;
-  position: relative;
+  position: absolute;
   top: 45%;
-  left: 5%;
+  right: 3%;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: 1.5s ease-in-out;
   padding: 10px;
+  animation-duration: 4.1s;
 }
 .app__projectArrow :after {
   content: ""; /* This is necessary for the pseudo element to work. */
@@ -121,53 +70,34 @@ video {
   margin: 0 auto; /* This will center the border. */
   width: 30%; /* Change this to whatever width you want. */
   padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 2px solid #6f42c1; /* This creates the border. Replace black with whatever color you want. */
-}
-
-.app__projectArrow > img {
-  height: 30px;
-  margin-right: 10px;
+  border-bottom: 2px solid #ddf780; /* This creates the border. Replace black with whatever color you want. */
 }
 
 .app__projectArrow > span {
-  transform: rotate(-90deg);
-  font-size: 20px;
+  transform: rotate(90deg);
+  font-size: 22px;
   letter-spacing: 2.5px;
-  color: #61dafb;
+  color: black;
+  /* color: white; */
 }
+
 .openProjects-active {
-  left: 20%;
+  right: 70%;
   transition: 1s ease-in-out;
   border: none;
+  color: black;
+  z-index: 10000;
 }
 
-.app__disable-particles > span {
-  display: flex;
-  align-items: center;
-  color: #6f42c1;
-  cursor: pointer;
-  font-size: 12px;
+.app__header {
+  background-color: #cfe67e;
   position: absolute;
-  left: 15px;
-  margin-top: 10px;
-}
-
-.app__resume {
-  font-size: 24px;
-  border-bottom: 3px solid #6f42c1;
-  color: white;
-
-  letter-spacing: 1.6px;
-}
-
-.app__resume::after {
-  content: "";
-  display: block;
-  width: 50%;
-  border-bottom: 1px solid #6f42c1;
-  position: relative;
-  top: 20px;
-  left: 27%;
+  height: 100%;
+  width: 15%;
+  top: 0;
+  left: 0;
+  border-right: 1px solid grey;
+  animation-duration: 3s;
 }
 
 @media only screen and (max-width: 1153px) {
@@ -179,9 +109,6 @@ video {
 @media only screen and (max-width: 1153px) {
   .app__icons {
     display: grid;
-  }
-  .app__resume {
-    left: 80%;
   }
 }
 @media only screen and (max-width: 700px) {

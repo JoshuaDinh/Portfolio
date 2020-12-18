@@ -12,26 +12,26 @@ const Nav = () => {
   const [email, setEmail] = useState(false);
   const [resume, setResume] = useState(false);
   return (
-    <div className="nav">
+    <div className="nav ">
       <h1>Joshua Dinh</h1>
-      <div className="nav__icons">
+      <div className="nav__icons ">
         <div className="nav__container">
           {" "}
           <a
-            href="https:www.linkedin.com/in/joshuahungdinh/"
+            href={resume}
             target="_blank"
             rel="noreferrer"
-            className="app__icon"
-            onMouseEnter={() => setLinkedIn(true)}
-            onMouseLeave={() => setLinkedIn(false)}
+            onMouseEnter={() => setResume(true)}
+            onMouseLeave={() => setResume(false)}
           >
-            <LinkedInIcon
-              fontSize={`${linkedIn && "large"}`}
+            <PictureAsPdfIcon
+              fontSize={`${resume && "large"}`}
               style={{ color: "#cfe67e" }}
             />
           </a>
-          <p className={`${linkedIn && "iconTitles-active"}`}>LinkedIn</p>
+          <p className={`${resume && "iconTitles-active"}`}>Resume</p>
         </div>
+
         <div className="nav__container">
           {" "}
           <a
@@ -66,18 +66,19 @@ const Nav = () => {
         <div className="nav__container">
           {" "}
           <a
-            href={resume}
+            href="https:www.linkedin.com/in/joshuahungdinh/"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={() => setResume(true)}
-            onMouseLeave={() => setResume(false)}
+            className="app__icon"
+            onMouseEnter={() => setLinkedIn(true)}
+            onMouseLeave={() => setLinkedIn(false)}
           >
-            <PictureAsPdfIcon
-              fontSize={`${resume && "large"}`}
+            <LinkedInIcon
+              fontSize={`${linkedIn && "large"}`}
               style={{ color: "#cfe67e" }}
             />
           </a>
-          <p className={`${resume && "iconTitles-active"}`}>Resume</p>
+          <p className={`${linkedIn && "iconTitles-active"}`}>LinkedIn</p>
         </div>
       </div>
     </div>
