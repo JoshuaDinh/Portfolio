@@ -31,7 +31,7 @@ const Nav = ({ openProjects }) => {
           >
             <PictureAsPdfIcon
               fontSize={`${resume && "large"}`}
-              style={{ color: "#cfe67e" }}
+              style={{ color: "#ffffff" }}
             />
           </a>
           <p className={`${resume && "iconTitles-active"}`}>Resume</p>
@@ -49,7 +49,7 @@ const Nav = ({ openProjects }) => {
           >
             <CallIcon
               fontSize={`${email && "large"}`}
-              style={{ color: "#cfe67e" }}
+              style={{ color: "#ffffff" }}
             />
           </a>
           <p className={`${email && "iconTitles-active"}`}>Contact</p>
@@ -70,7 +70,7 @@ const Nav = ({ openProjects }) => {
           >
             <GitHubIcon
               fontSize={`${github && "large"}`}
-              style={{ color: "#cfe67e" }}
+              style={{ color: "#ffffff" }}
             />
           </a>
           <p className={`${github && "iconTitles-active"}`}>Github</p>
@@ -91,7 +91,7 @@ const Nav = ({ openProjects }) => {
           >
             <LinkedInIcon
               fontSize={`${linkedIn && "large"}`}
-              style={{ color: "#cfe67e" }}
+              style={{ color: "#ffffff" }}
             />
           </a>
           <p className={`${linkedIn && "iconTitles-active"}`}>LinkedIn</p>

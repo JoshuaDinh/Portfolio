@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3daadf0a.chunk.css",
+    "main.js": "/static/js/main.38742afb.chunk.js",
+    "main.js.map": "/static/js/main.38742afb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.291a5225.js",
+    "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
+    "static/js/2.48cb5974.chunk.js": "/static/js/2.48cb5974.chunk.js",
+    "static/js/2.48cb5974.chunk.js.map": "/static/js/2.48cb5974.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3daadf0a.chunk.css.map": "/static/css/main.3daadf0a.chunk.css.map",
+    "static/js/2.48cb5974.chunk.js.LICENSE.txt": "/static/js/2.48cb5974.chunk.js.LICENSE.txt",
+    "static/media/Resume.324f45cf.pdf": "/static/media/Resume.324f45cf.pdf",
+    "static/media/bitcoin-vid.2252b806.mov": "/static/media/bitcoin-vid.2252b806.mov",
+    "static/media/covid-vid.b7b0f82c.mov": "/static/media/covid-vid.b7b0f82c.mov",
+    "static/media/flower.fe2afc4f.mp4": "/static/media/flower.fe2afc4f.mp4",
+    "static/media/flower2.7fb189ee.mp4": "/static/media/flower2.7fb189ee.mp4",
+    "static/media/flower3.d27b2665.mp4": "/static/media/flower3.d27b2665.mp4",
+    "static/media/img.c3b82faf.jpg": "/static/media/img.c3b82faf.jpg",
+    "static/media/netflix-vid.40c8b1ba.mov": "/static/media/netflix-vid.40c8b1ba.mov"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.291a5225.js",
+    "static/js/2.48cb5974.chunk.js",
+    "static/css/main.3daadf0a.chunk.css",
+    "static/js/main.38742afb.chunk.js"
+  ]
+}
