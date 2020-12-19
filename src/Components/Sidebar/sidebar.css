@@ -54,10 +54,24 @@
 
 .nav {
   position: absolute;
+  left: -50%;
   align-items: center;
   height: 100%;
   width: 30vw;
   background-color: rgba(0, 0, 0, 0.1);
+  animation: openingHeader 1s;
+  animation-delay: 6s;
+  animation-fill-mode: both, forwards, none;
+}
+
+@keyframes openingHeader {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .nav > h1 {
@@ -110,6 +124,7 @@ h2 {
   z-index: 1000000;
   animation: openingHorizontalLine 0.5s;
   animation-fill-mode: both, forwards, none;
+  animation-delay: 6s;
 }
 
 @keyframes openingHorizontalLine {
@@ -133,7 +148,7 @@ h2 {
   z-index: 1000000;
   transform: rotate(90deg);
   animation: openingVerticleLine 1s;
-  animation-delay: 0.5s;
+  animation-delay: 6.5s;
   animation-fill-mode: both, forwards, none;
 }
 
@@ -162,7 +177,8 @@ h2 {
   color: black;
   animation: openingIcons 1s;
   animation-fill-mode: both, forwards, none;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
+  animation-delay: 5s;
   position: relative;
 }
 
