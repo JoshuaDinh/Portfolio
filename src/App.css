@@ -33,17 +33,51 @@ video {
   border-bottom: 2px solid white;
   animation: 10s;
 }
+img {
+  object-fit: cover;
+  width: 70vw;
+  height: 91vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: openingImage 1s;
+  animation-fill-mode: both, forwards, none;
+  animation-delay: 2.5s;
+}
+
+@keyframes openingImage {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.app__image-border::before {
+  content: "";
+  width: 102%;
+  height: 2px;
+  position: absolute;
+  top: 91%;
+  left: 40%;
+  transform: rotate(180deg);
+  background-color: white;
+  animation: openingHorizontalLine2 1s;
+  animation-fill-mode: both, forwards, none;
+  animation-delay: 1.5s;
+}
 
 .App-link {
   color: black;
 }
 
-@keyframes App-logo-spin {
+@keyframes openingHorizontalLine2 {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 102%;
   }
 }
 
@@ -62,6 +96,7 @@ video {
   transition: 1.5s ease-in-out;
   padding: 10px;
   animation-duration: 4.1s;
+  animation-delay: 1s;
 }
 .app__projectArrow :after {
   content: ""; /* This is necessary for the pseudo element to work. */
@@ -120,6 +155,9 @@ video {
   .app__resume {
     left: 76%;
   }
+}
+
+.app__opening-background {
 }
 
 .app__opening-background:nth-child(1) {

@@ -4,8 +4,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Button from "./Components/Button/Button";
 import Nav from "./Components/Sidebar/Nav";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
-import video from "./imgs/smoke.mp4";
-// import video from "./imgs/video.mp4";
+import img from "./imgs/img.jpg";
 // import video2 from "./imgs/flower2.mp4";
 // import video3 from "./imgs/flower3.mp4";
 import MouseParticles from "react-mouse-particles";
@@ -116,16 +115,9 @@ const App = () => {
     <div className="App">
       <Nav openProjects={openProjects} />
       <div className="app__header animate__animated animate__fadeInDownBig"></div>
-
-      {/* {displayBackgroundVideo()} */}
-      <video
-        className="animate__animated animate__fadeInRightBig"
-        autoPlay
-        muted
-        loop
-      >
-        <source src={video} type="video/mp4" />
-      </video>
+      <div className="app__image-border">
+        <img src={img} />
+      </div>
       <div className="app__opening-container">
         <div className="app__opening-background"></div>
         <div className="app__opening-background"></div>

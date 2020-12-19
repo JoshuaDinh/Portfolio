@@ -97,9 +97,54 @@ h2 {
   position: absolute;
   bottom: 9%;
   left: 0;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
   z-index: 100;
+}
+
+.nav__icons::before {
+  content: "";
+  width: 121%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 0;
+  z-index: 1000000;
+  animation: openingHorizontalLine 0.5s;
+  animation-fill-mode: both, forwards, none;
+}
+
+@keyframes openingHorizontalLine {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 121%;
+  }
+}
+
+.nav__icons::after {
+  content: "";
+  width: 136%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: 50%;
+  left: 53%;
+  z-index: 1000000;
+  transform: rotate(90deg);
+  animation: openingVerticleLine 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both, forwards, none;
+}
+
+@keyframes openingVerticleLine {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 136%;
+  }
 }
 
 .nav__icons-project {
@@ -108,13 +153,27 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.nav__container-projects {
+.nav__container-projects > p {
   color: white;
 }
 
 .nav__container {
   background-color: rgb(255, 255, 255, 0.5);
   color: black;
+  animation: openingIcons 1s;
+  animation-fill-mode: both, forwards, none;
+  animation-delay: 2s;
+  position: relative;
+}
+
+@keyframes openingIcons {
+  0% {
+    left: -750%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 /* 
 .nav__container:first-child {
@@ -146,11 +205,7 @@ h2 {
 
 @keyframes icons {
   0% {
-    bottom: 8%;
     left: 0%;
-  }
-  20% {
-    left: -20%;
   }
 
   100% {
