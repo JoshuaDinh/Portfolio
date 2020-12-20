@@ -139,7 +139,7 @@ img {
   animation-delay: 6s;
   animation-fill-mode: both, forwards, none;
 }
-
+/* 
 .app__opening-line:nth-child(1) {
   color: white;
   border-bottom: 1px solid white;
@@ -193,7 +193,7 @@ img {
   top: 80%;
   animation: open 7s;
   animation-delay: 4s;
-}
+} */
 
 @keyframes open {
   0% {
@@ -258,5 +258,160 @@ img {
   }
   to {
     right: 0;
+  }
+}
+
+.mandala {
+  height: 300px;
+  /* height: 270px; */
+  object-fit: contain;
+}
+
+.mandala:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: falling 3s;
+  animation-delay: 4s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 1;
+  animation: falling 5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  z-index: 1;
+  animation: falling 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 22%;
+  z-index: 1;
+  animation: falling 2s;
+  animation-delay: 5s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  animation: falling 3s;
+  animation-delay: 4.2s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(6) {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  z-index: 1;
+  animation: falling 1s;
+  animation-delay: 5s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(7) {
+  position: absolute;
+  top: 0;
+  left: 46%;
+  z-index: 1;
+  animation: falling 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(8) {
+  position: absolute;
+  top: 0;
+  left: 56%;
+  animation: falling 1s;
+  animation-delay: 4s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(9) {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  z-index: 1;
+  animation: falling 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(10) {
+  position: absolute;
+  top: 0;
+  left: 63%;
+  animation: falling 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(11) {
+  position: absolute;
+  top: 0;
+  left: 37%;
+  animation: falling 2.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(12) {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  animation: falling 4s;
+  animation-delay: 2s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(13) {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -8%;
+  animation: falling 2.4s;
+  animation-delay: 3s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(14) {
+  position: absolute;
+  top: 0;
+  left: -17%;
+  z-index: 1;
+  animation: falling 4s;
+  animation-delay: 3.2s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(15) {
+  position: absolute;
+  top: 0;
+  left: -24%;
+  z-index: 1;
+  animation: falling 2.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both, forwards, none;
+}
+.mandala:nth-child(16) {
+  position: absolute;
+  top: 0;
+  left: -31%;
+  animation: falling 5.2s;
+  animation-delay: 3.2s;
+  animation-fill-mode: both, forwards, none;
+}
+
+@keyframes falling {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+    transform: rotate(360deg);
   }
 }

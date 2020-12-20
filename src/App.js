@@ -10,6 +10,12 @@ import bitcoin from "./imgs/bitcoin-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
 import ProjectsDisplay from "./Components/Projects/ProjectsDisplay";
 import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
+import mandala1 from "./mandala/1.png";
+import mandala2 from "./mandala/2.png";
+import mandala3 from "./mandala/3.png";
+import mandala4 from "./mandala/4.png";
+import mandala5 from "./mandala/5.png";
+import mandala6 from "./mandala/6.png";
 const App = () => {
   const [openProjects, setOpenProjects] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -63,11 +69,27 @@ const App = () => {
 
   return (
     <div className="App">
+      <img className="mandala" src={mandala1} />
+      <img className="mandala" src={mandala2} />
+      <img className="mandala" src={mandala3} />
+      <img className="mandala" src={mandala4} />
+      <img className="mandala" src={mandala5} />
+      <img className="mandala" src={mandala6} />
+      <img className="mandala" src={mandala2} />
+      <img className="mandala" src={mandala1} />
+      <img className="mandala" src={mandala3} />
+      <img className="mandala" src={mandala5} />
+      <img className="mandala" src={mandala6} />
+      <img className="mandala" src={mandala1} />
+      <img className="mandala" src={mandala5} />
+      <img className="mandala" src={mandala2} />
+      <img className="mandala" src={mandala3} />
+      <img className="mandala" src={mandala5} />
       <div className="app__opening-header typewriter">
         <h4>Hello My Name Is</h4>
         <h1>Joshua Dinh</h1>
       </div>
-      <PersonalInfo openProjects={openProjects} />
+      {/* <PersonalInfo openProjects={openProjects} />
       <div className="app__header "></div>
       <div className="app__image-border">
         <img src={img} />
@@ -121,7 +143,7 @@ const App = () => {
           "#000000",
         ]}
         cull="col,image-wrapper"
-      />
+      /> */}
     </div>
   );
 };
