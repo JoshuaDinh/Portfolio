@@ -38,19 +38,9 @@ body {
   right: 25%;
   width: 50%;
   height: 50%;
-  z-index: 10000000000;
   animation: moveHeader 3s;
   animation-delay: 5s;
   animation-fill-mode: both, forwards, none;
-}
-
-@keyframes moveHeader {
-  from {
-    right: 25%;
-  }
-  to {
-    right: -100%;
-  }
 }
 
 .typewriter h1 {
@@ -69,24 +59,6 @@ body {
     6px 6px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
 img {
   object-fit: cover;
   width: 70vw;
@@ -96,17 +68,7 @@ img {
   right: 0;
   animation: openingImage 1s;
   animation-fill-mode: both, forwards, none;
-  /* animation-delay: 2.5s; */
   animation-delay: 6s;
-}
-
-@keyframes openingImage {
-  from {
-    right: -100%;
-  }
-  to {
-    right: 0;
-  }
 }
 
 .app__image-border::before {
@@ -121,19 +83,6 @@ img {
   animation: openingHorizontalLine2 1s;
   animation-fill-mode: both, forwards, none;
   animation-delay: 7s;
-}
-
-.App-link {
-  color: black;
-}
-
-@keyframes openingHorizontalLine2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 102%;
-  }
 }
 
 .app__projectArrow {
@@ -167,7 +116,6 @@ img {
   font-size: 22px;
   letter-spacing: 2.5px;
   color: black;
-  /* color: white; */
 }
 
 .openProjects-active {
@@ -175,7 +123,7 @@ img {
   transition: 1s ease-in-out;
   border: none;
   color: black;
-  z-index: 10000;
+  z-index: 100;
   border: 1px solid white;
 }
 
@@ -192,17 +140,7 @@ img {
   animation-fill-mode: both, forwards, none;
 }
 
-@keyframes openingVerticle {
-  0% {
-    top: -100%;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-.app__opening-background:nth-child(1) {
+.app__opening-line:nth-child(1) {
   color: white;
   border-bottom: 1px solid white;
   height: 6%;
@@ -212,7 +150,7 @@ img {
   animation: open 3s;
   animation-delay: 4s;
 }
-.app__opening-background:nth-child(2) {
+.app__opening-line:nth-child(2) {
   color: white;
   border-bottom: 1px solid white;
   height: 6%;
@@ -223,7 +161,7 @@ img {
   animation: open 4s;
   animation-delay: 4s;
 }
-.app__opening-background:nth-child(3) {
+.app__opening-line:nth-child(3) {
   color: white;
   border-bottom: 1px solid white;
   height: 6%;
@@ -234,7 +172,7 @@ img {
   animation: open 5s;
   animation-delay: 4s;
 }
-.app__opening-background:nth-child(4) {
+.app__opening-line:nth-child(4) {
   color: white;
   border-bottom: 1px solid white;
   height: 6%;
@@ -245,7 +183,7 @@ img {
   animation: open 6s;
   animation-delay: 4s;
 }
-.app__opening-background:nth-child(5) {
+.app__opening-line:nth-child(5) {
   color: white;
   border-bottom: 1px solid white;
   height: 6%;
@@ -264,5 +202,61 @@ img {
 
   100% {
     left: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes moveHeader {
+  from {
+    right: 25%;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+@keyframes openingVerticle {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes openingHorizontalLine2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 102%;
+  }
+}
+
+@keyframes openingImage {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
   }
 }

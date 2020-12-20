@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Sidebar from "./Components/Sidebar/Sidebar";
 import Button from "./Components/Button/Button";
-import Nav from "./Components/Sidebar/Nav";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
+import CloseIcon from "@material-ui/icons/Close";
 import img from "./imgs/img.jpg";
 import MouseParticles from "react-mouse-particles";
 import covid19 from "./imgs/covid-vid.mov";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
+import ProjectsDisplay from "./Components/Projects/ProjectsDisplay";
+import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 const App = () => {
   const [openProjects, setOpenProjects] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [particles, setParticles] = useState(true);
+  // const [particles, setParticles] = useState(true);
 
   const displayProjectVideo = () => {
     if (currentIdx == 0) {
       return (
-        <Sidebar
+        <ProjectsDisplay
           projectVideo={bitcoin}
           setcurrentidx={setCurrentIdx}
           openProjects={openProjects}
@@ -29,7 +30,7 @@ const App = () => {
     if (currentIdx == 1) {
       return (
         <div>
-          <Sidebar
+          <ProjectsDisplay
             projectVideo={covid19}
             setcurrentidx={setCurrentIdx}
             openProjects={openProjects}
@@ -42,7 +43,7 @@ const App = () => {
     if (currentIdx == 2) {
       return (
         <>
-          <Sidebar
+          <ProjectsDisplay
             projectVideo={netflix}
             setcurrentidx={setCurrentIdx}
             openProjects={openProjects}
@@ -66,30 +67,42 @@ const App = () => {
         <h4>Hello My Name Is</h4>
         <h1>Joshua Dinh</h1>
       </div>
-      <Nav openProjects={openProjects} />
+      <PersonalInfo openProjects={openProjects} />
       <div className="app__header "></div>
       <div className="app__image-border">
         <img src={img} />
       </div>
       <div className="app__opening-container">
-        <div className="app__opening-background"></div>
-        <div className="app__opening-background"></div>
-        <div className="app__opening-background"></div>
-        <div className="app__opening-background"></div>
-        <div className="app__opening-background"></div>
-        <div className="app__opening-background"></div>
+        <div className="app__opening-line"></div>
+        <div className="app__opening-line"></div>
+        <div className="app__opening-line"></div>
+        <div className="app__opening-line"></div>
+        <div className="app__opening-line"></div>
+        <div className="app__opening-line"></div>
       </div>
 
       {displayProjectVideo()}
-      <div
-        onClick={() => setOpenProjects(!openProjects)}
-        className={`app__projectArrow animate__animated animate__backInLeft  ${
-          openProjects && "openProjects-active"
-        }`}
-      >
-        <span>Projects</span>
-        <ArrowLeftIcon fontSize="large" style={{ color: "white" }} />
-      </div>
+      {!openProjects ? (
+        <div
+          onClick={() => setOpenProjects(!openProjects)}
+          className={`app__projectArrow animate__animated animate__backInLeft  ${
+            openProjects && "openProjects-active"
+          }`}
+        >
+          <span>Projects</span>
+          <ArrowLeftIcon fontSize="large" style={{ color: "white" }} />
+        </div>
+      ) : (
+        <div
+          onClick={() => setOpenProjects(!openProjects)}
+          className={`app__projectArrow animate__animated animate__backInLeft  ${
+            openProjects && "openProjects-active"
+          }`}
+        >
+          <span>Close</span>
+          <CloseIcon fontSize="large" style={{ color: "white" }} />
+        </div>
+      )}
       <Button
         openProjects={openProjects}
         setCurrentIdx={setCurrentIdx}

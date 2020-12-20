@@ -4,8 +4,8 @@
 }
 
 .button__container-left {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
   margin: 5px;
   border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
@@ -19,12 +19,11 @@
   right: 10%;
 }
 .button__container-right {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
   margin: 5px;
   border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
-
   cursor: pointer;
   background-color: rgb(255, 255, 255, 0.5);
   display: flex;
@@ -48,6 +47,8 @@
   animation-fill-mode: both, forwards, none;
 }
 
+/* --------------------KeyFrames-------------------- */
+
 @keyframes left {
   0% {
     bottom: 4%;
@@ -58,10 +59,9 @@
   }
 
   100% {
-    bottom: 50%;
+    bottom: 45%;
     right: 66%;
     background-color: rgba(0, 0, 0, 0.5);
-
     color: white;
   }
 }
@@ -72,14 +72,13 @@
   }
   50% {
     bottom: 4%;
-    right: 0.8;
+    right: 0.5;
   }
 
   100% {
-    bottom: 50%;
-    right: 0.8%;
+    bottom: 45%;
+    right: 0.5%;
     background-color: rgba(0, 0, 0, 0.5);
-
     color: white;
   }
 }
