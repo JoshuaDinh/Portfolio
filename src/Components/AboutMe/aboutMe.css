@@ -1,0 +1,51 @@
+.aboutMe__section {
+  height: 100vh;
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+.aboutMe__section:before {
+  content: "";
+  height: 100vh;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: url("../../imgs/aboutMeBackground.gif") no-repeat center;
+  background-size: cover;
+}
+
+.aboutMe__header {
+  position: relative;
+  font-size: 6rem;
+  text-shadow: 0px 0px 0 rgb(83, 83, 83), 1px 1px 0 rgb(131, 131, 131),
+    2px 2px 0 rgb(0, 0, 0), 3px 3px 0 rgb(0, 0, 0), 4px 4px 0 rgb(130, 131, 125),
+    5px 5px 0 rgb(0, 0, 0), 6px 6px 5px rgba(0, 0, 0, 0.6),
+    6px 6px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.aboutMe__background {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.2); /*can be anything, of course*/
+}
+
+.aboutMe__desc {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 50vw;
+  background: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+  letter-spacing: 3px;
+  line-height: 32px;
+  font-size: 1.4rem;
+  padding: 2em;
+}
