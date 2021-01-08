@@ -1,0 +1,41 @@
+.nav-container {
+  position: relative;
+  z-index: 100;
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  position: fixed;
+  background-color: white;
+  animation: nav 4s forwards;
+  animation-delay: 6s;
+  transform: translateX(-150%);
+}
+.nav > h5 {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  font-family: "Megrim";
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8%;
+  margin-right: 4rem;
+}
+
+@keyframes nav {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
