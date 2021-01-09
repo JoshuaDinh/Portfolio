@@ -10,8 +10,10 @@
   );
   width: 45vw;
   height: 40vh;
-  /* -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
-  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68); */
+  animation: borderTop 3s ease infinite, borderRight 3s ease infinite,
+    borderBottom 3s ease infinite, borderLeft 3s ease infinite;
+  -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
 }
 
 .description > h4 {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./videoFrame.css";
 
-export const VideoFrame = ({ video }) => {
+export const VideoFrame = ({ video, offset }) => {
   return (
     <div className="video-container">
       <video autoPlay muted loop className="video">

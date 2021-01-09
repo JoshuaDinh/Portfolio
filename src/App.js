@@ -1,79 +1,50 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
 import { Drawer } from "./Components/Drawer/Drawer";
 import { Nav } from "./Components/Nav/Nav";
-import mandala1 from "./mandala/1.png";
-import mandala2 from "./mandala/2.png";
-import mandala3 from "./mandala/3.png";
-import mandala4 from "./mandala/4.png";
-import mandala5 from "./mandala/5.png";
-import mandala6 from "./mandala/6.png";
-import mandala7 from "./mandala/7.png";
-import mandala8 from "./mandala/8.png";
-import mandala9 from "./mandala/9.png";
-import mandala10 from "./mandala/10.png";
-import mandala11 from "./mandala/11.png";
-import mandala12 from "./mandala/12.png";
-import { VideoFrame } from "./Components/VideoFrame/VideoFrame";
-import { AboutProject } from "./Components/AboutProject/AboutProject";
+import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import covid from "./imgs/covid-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 const App = () => {
-  const [offset, setOffset] = useState(0);
+  const [aboutMeModal, setAboutMeModal] = useState(false);
 
+  // Hides overflow until opening animation is complete
   useEffect(() => {
-    function handleScroll() {
-      setOffset(window.pageYOffset);
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const timer = setTimeout(() => {
+      document.body.classList.add("reveal-body-overflow");
+    }, 8000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      <img className="mandala-drop" alt="mandala" src={mandala1} />
-      <img className="mandala-drop" alt="mandala" src={mandala2} />
-      <img className="mandala-drop" alt="mandala" src={mandala3} />
-      <img className="mandala-drop" alt="mandala" src={mandala4} />
-      <img className="mandala-drop" alt="mandala" src={mandala5} />
-      <img className="mandala-drop" alt="mandala" src={mandala6} />
-      <img className="mandala-drop" alt="mandala" src={mandala7} />
-      <img className="mandala-drop" alt="mandala" src={mandala8} />
-      <img className="mandala-drop" alt="mandala" src={mandala9} />
-      <img className="mandala-drop" alt="mandala" src={mandala10} />
-      <img className="mandala-drop" alt="mandala" src={mandala11} />
-      <img className="mandala-drop" alt="mandala" src={mandala12} />
-      <img className="mandala-drop" alt="mandala" src={mandala1} />
-      <img className="mandala-drop" alt="mandala" src={mandala2} />
-      <img className="mandala-drop" alt="mandala" src={mandala3} />
-      <img className="mandala-drop" alt="mandala" src={mandala5} />
-      <div className="app__opening-header typewriter">
-        <h4>Hello My Name Is</h4>
-        <h1>Joshua Dinh</h1>
-      </div>
+      <OpeningAnimation />
+      {aboutMeModal === true ? (
+        <AboutMe setAboutMeModal={setAboutMeModal} />
+      ) : null}
       <Nav />
       <div className="app-content-container">
-        <Drawer />
+        <Drawer setAboutMeModal={setAboutMeModal} />
         <div className="app-content">
-          <div className="app-project-wrapper">
-            <h1>Project Bitcoin</h1>
-            <VideoFrame video={bitcoin} />
-            <AboutProject />
-          </div>
-          <div className="app-project-wrapper">
-            <h1>Project Covid19</h1>
-            <VideoFrame video={covid} />
-            <AboutProject />
-          </div>
-          <div className="app-project-wrapper">
-            <h1>Project Netflix</h1>
-            <VideoFrame video={netflix} />
-            <AboutProject />
-          </div>
+          <ProjectWrapper
+            ScrollLink="Bitcoin"
+            Video={bitcoin}
+            ProjectTitle="Project Bitcoin"
+          />
+          <ProjectWrapper
+            ScrollLink="Covid"
+            Video={covid}
+            ProjectTitle="Project Covid"
+          />
+          <ProjectWrapper
+            ScrollLink="Netflix"
+            Video={netflix}
+            ProjectTitle="Project Netflix"
+          />
         </div>
       </div>
     </div>

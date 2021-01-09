@@ -10,20 +10,20 @@ export const Nav = () => {
       <div className="nav">
         {" "}
         <div className="nav-title-container">
-          <span className="nav-letter">J</span>
-          <span className="nav-letter">o</span>
-          <span className="nav-letter">s</span>
-          <span className="nav-letter">h</span>
-          <span className="nav-letter">'s</span>
-          <span className="nav-letter"> D</span>
-          <span className="nav-letter">a</span>
-          <span className="nav-letter">s</span>
-          <span className="nav-letter">h</span>
-          <span className="nav-letter">b</span>
-          <span className="nav-letter">o</span>
-          <span className="nav-letter">a</span>
-          <span className="nav-letter">r</span>
-          <span className="nav-letter">d</span>
+          <span className="highlight-text">J</span>
+          <span className="highlight-text">o</span>
+          <span className="highlight-text">s</span>
+          <span className="highlight-text">h</span>
+          <span className="highlight-text">'s</span>
+          <span className="highlight-text"> D</span>
+          <span className="highlight-text">a</span>
+          <span className="highlight-text">s</span>
+          <span className="highlight-text">h</span>
+          <span className="highlight-text">b</span>
+          <span className="highlight-text">o</span>
+          <span className="highlight-text">a</span>
+          <span className="highlight-text">r</span>
+          <span className="highlight-text">d</span>
         </div>
         <div className="nav-icons">
           <AttachMoneyIcon />

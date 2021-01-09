@@ -9,8 +9,10 @@
     rgba(209, 204, 204, 1) 65%,
     rgba(186, 178, 178, 1) 100%
   );
-  /* -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
-  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68); */
+  -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  animation: borderTop 3s ease infinite, borderRight 3s ease infinite,
+    borderBottom 3s ease infinite, borderLeft 3s ease infinite;
 }
 
 .tech-used > h4 {
