@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import { ReactRain } from "../ReactRain/ReactRain";
 
 import "./nav.css";
 
-export const Nav = () => {
+export const Nav = ({ setMakeItRain }) => {
   return (
     <div className="nav-container">
+      {" "}
       <div className="nav">
-        {" "}
         <div className="nav-title-container">
           <span className="highlight-text">J</span>
           <span className="highlight-text">o</span>
@@ -26,7 +27,7 @@ export const Nav = () => {
           <span className="highlight-text">d</span>
         </div>
         <div className="nav-icons">
-          <AttachMoneyIcon />
+          <AttachMoneyIcon onClick={() => setMakeItRain(true)} />
           <Avatar>JD</Avatar>
         </div>
       </div>

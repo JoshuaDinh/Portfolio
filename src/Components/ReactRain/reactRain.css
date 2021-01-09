@@ -1,0 +1,157 @@
+.react-rain {
+  width: 8em;
+  height: 8em;
+  z-index: 1000000000;
+}
+
+.react-rain:nth-child(1) {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  animation: falling 5s;
+  animation-delay: 3s;
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(2) {
+  position: absolute;
+  top: -100%;
+  left: 5%;
+  animation: falling 5s;
+  animation-delay: 2.5s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(3) {
+  position: absolute;
+  top: -100%;
+  left: 15%;
+  animation: falling 5s;
+  animation-delay: 3.1s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(4) {
+  position: absolute;
+  top: -100%;
+  left: 22%;
+  animation: falling 5s;
+  animation-delay: 4s;
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(5) {
+  position: absolute;
+  top: -100%;
+  left: 30%;
+  animation: falling 5s;
+
+  animation-delay: 2.9s;
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(6) {
+  position: absolute;
+  top: -100%;
+  left: 38%;
+  animation: falling 5s;
+  animation-delay: 3.5s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(7) {
+  position: absolute;
+  top: -100%;
+  left: 46%;
+  animation: falling 5s;
+  animation-delay: 2.7s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(8) {
+  position: absolute;
+  top: -100%;
+  left: 56%;
+  animation: falling 5s;
+  animation-delay: 3.4s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(9) {
+  position: absolute;
+  top: -100%;
+  left: 45%;
+  animation: falling 5s;
+
+  animation-delay: 3.5s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(10) {
+  position: absolute;
+  top: -100%;
+  left: 33%;
+
+  animation: falling 5s;
+  animation-delay: 2.9s;
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(11) {
+  position: absolute;
+  top: -100%;
+  left: 37%;
+  animation: falling 5s;
+  animation-delay: 3.5s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(12) {
+  position: absolute;
+  top: -100%;
+  left: 20%;
+  animation: falling 5s;
+  animation-delay: 2s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(13) {
+  position: absolute;
+  top: -100%;
+  left: -8%;
+  animation: falling 5s;
+  animation-delay: 4s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(14) {
+  position: absolute;
+  top: -100%;
+  left: -17%;
+  animation: falling 5s;
+  animation-delay: 3.2s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(15) {
+  position: absolute;
+  top: -100%;
+  left: -24%;
+  animation: falling 5s;
+  animation-delay: 2.5s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+.react-rain:nth-child(16) {
+  position: absolute;
+  top: -100%;
+  left: -31%;
+  animation: falling 1s;
+  animation-delay: 3.2s;
+
+  /* animation-fill-mode: both, forwards, none; */
+}
+
+@keyframes falling {
+  from {
+  }
+  to {
+    transform: translate(0, 1000%) rotate(1080deg);
+  }
+}

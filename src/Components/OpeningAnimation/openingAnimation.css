@@ -246,6 +246,6 @@ img {
   from {
   }
   to {
-    transform: translate(0, 900%) rotate(1080deg);
+    transform: translate(0, 700%) rotate(1080deg);
   }
 }

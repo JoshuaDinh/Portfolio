@@ -2,6 +2,7 @@ import React from "react";
 import "./drawer.css";
 import { DrawerOption } from "./DrawerOption";
 import logo from "../../imgs/react-logo.gif";
+import resume from "../../imgs/Resume.pdf";
 
 export const Drawer = ({ setAboutMeModal }) => {
   return (
@@ -14,7 +15,15 @@ export const Drawer = ({ setAboutMeModal }) => {
         <DrawerOption title="Project Bitcoin" link="Bitcoin" />
         <DrawerOption title="Project Project Covid" link="Covid" />
         <DrawerOption title="Project Netflix" link="Netflix" />
-        <DrawerOption title="Resume" />
+        <a
+          className="drawer-option"
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
+          target="blank"
+        >
+          Resume
+        </a>
         <DrawerOption title="Github" />
         <DrawerOption title="Linked In" />
       </div>

@@ -27,8 +27,6 @@
 
 .about-me-text {
   display: grid;
-  line-height: 3rem;
-  font-family: "Open Sans", sans-serif;
 }
 .about-me-button:hover {
   background-color: #61dbfb;

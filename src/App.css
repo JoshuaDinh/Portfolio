@@ -5,8 +5,14 @@
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Megrim";
 }
+
 a {
   text-decoration: none;
+  color: black;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 3rem;
 }
 
 body {
@@ -65,14 +71,15 @@ body {
   top: 8%;
   animation: content 4s forwards;
   animation-delay: 6s;
-  transform: translateY(250%);
+  transform: translateX(250%);
+  /* transform: translateY(250%); */
 }
 
 @keyframes content {
   from {
   }
   to {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 

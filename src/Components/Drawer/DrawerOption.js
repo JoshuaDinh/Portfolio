@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./drawer.css";
 import { Link } from "react-scroll";
 
@@ -10,8 +10,6 @@ export const DrawerOption = ({ title, link, setAboutMeModal }) => {
       duration={1000}
       smooth={true}
       className="drawer-option"
-      href="Resume.pdf"
-      target="_blank"
     >
       {title}
     </Link>
