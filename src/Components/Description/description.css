@@ -1,6 +1,5 @@
 .description {
   color: black;
-
   border: 1px solid rgb(207, 206, 206);
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -26,4 +25,10 @@
 
 .Description-text {
   padding: 0 5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .description {
+    overflow-y: scroll;
+  }
 }
