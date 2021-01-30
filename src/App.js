@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
-import { Drawer } from "./Components/Drawer/Drawer";
-import { Nav } from "./Components/Nav/Nav";
-import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import covid from "./imgs/covid-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
 import AboutMe from "./Components/AboutMe/AboutMe";
+import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
+import { Drawer } from "./Components/Drawer/Drawer";
+import { Nav } from "./Components/Nav/Nav";
+import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import { BitcoinDesc } from "../src/Components/Description/DescriptionText";
 import { CovidDesc } from "../src/Components/Description/DescriptionText";
 import { NetflixDesc } from "../src/Components/Description/DescriptionText";
 import { BitcoinSkills } from "./Components/Technology/TechnologyText";
 import { CovidSkills } from "./Components/Technology/TechnologyText";
 import { NetflixSkills } from "./Components/Technology/TechnologyText";
-import { ReactRain } from "./Components/ReactRain/ReactRain";
 
 const App = () => {
   const [aboutMeModal, setAboutMeModal] = useState(false);
-  const [makeItRain, setMakeItRain] = useState(false);
 
   // Hides overflow until opening animation is complete
   useEffect(() => {
@@ -34,7 +32,7 @@ const App = () => {
       {aboutMeModal === true ? (
         <AboutMe setAboutMeModal={setAboutMeModal} />
       ) : null}
-      <Nav setMakeItRain={setMakeItRain} />
+      <Nav />
       <div className="app-content-container">
         <Drawer setAboutMeModal={setAboutMeModal} />
         <div className="app-content">

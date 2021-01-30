@@ -10,6 +10,7 @@
   );
   width: 45vw;
   height: 40vh;
+  overflow-y: scroll;
   animation: borderTop 3s ease infinite, borderRight 3s ease infinite,
     borderBottom 3s ease infinite, borderLeft 3s ease infinite;
   -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
@@ -25,10 +26,4 @@
 
 .Description-text {
   padding: 0 5%;
-}
-
-@media only screen and (max-width: 900px) {
-  .description {
-    overflow-y: scroll;
-  }
 }

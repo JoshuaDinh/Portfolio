@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 36%;
   height: 40vh;
+  overflow-y: scroll;
 
   border: 1px solid rgb(207, 206, 206);
   background: rgb(255, 255, 255);
@@ -37,11 +38,4 @@
   line-height: 2.5rem;
   list-style: none;
   animation: borderBottom 3s ease infinite;
-}
-
-@media only screen and (max-width: 900px) {
-  .tech-used {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
 }

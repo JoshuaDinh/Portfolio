@@ -20,7 +20,6 @@ export const Drawer = ({ setAboutMeModal }) => {
           href={resume}
           target="_blank"
           rel="noreferrer"
-          target="blank"
         >
           Resume
         </a>

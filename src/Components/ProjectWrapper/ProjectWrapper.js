@@ -2,7 +2,6 @@ import React from "react";
 import "./projectWrapper.css";
 import { VideoFrame } from "../VideoFrame/VideoFrame";
 import { AboutProject } from "../AboutProject/AboutProject";
-import { Description } from "../Description/Description";
 
 export const ProjectWrapper = ({
   Video,
