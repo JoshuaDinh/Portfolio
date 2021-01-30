@@ -9,6 +9,8 @@ export const ProjectWrapper = ({
   ScrollLink,
   DescriptionText,
   SkillsUsedText,
+  CodeLink,
+  DemoLink,
 }) => {
   return (
     <div id={ScrollLink} className="project-wrapper">
@@ -16,8 +18,26 @@ export const ProjectWrapper = ({
       <hr className="line-break"></hr>
       <VideoFrame video={Video} />
       <div className="projects-buttons-container">
-        <button className="projects-button">View Code</button>
-        <button className="projects-button">Live Demo</button>
+        <button className="projects-button">
+          <a
+            className="projects-button-link"
+            href={CodeLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Code
+          </a>
+        </button>
+        <button className="projects-button">
+          <a
+            className="projects-button-link"
+            href={DemoLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live Demo
+          </a>
+        </button>
       </div>
       <AboutProject
         SkillsUsedText={SkillsUsedText}

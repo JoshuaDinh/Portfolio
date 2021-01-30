@@ -22,9 +22,23 @@ export const Drawer = ({ setAboutMeModal }) => {
           rel="noreferrer"
         >
           Resume
+        </a>{" "}
+        <a
+          className="drawer-option"
+          href="https://github.com/JoshuaDinh"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
         </a>
-        <DrawerOption title="Github" />
-        <DrawerOption title="Linked In" />
+        <a
+          className="drawer-option"
+          href="https://www.linkedin.com/in/joshuahungdinh/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linked-In
+        </a>
       </div>
     </div>
   );

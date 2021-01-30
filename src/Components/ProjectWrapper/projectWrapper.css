@@ -22,6 +22,10 @@
   background-color: rgba(71, 71, 71, 0.8);
   cursor: pointer;
   margin: 0 1%;
+  outline: none;
+}
+.projects-button-link {
+  color: white;
   font-family: "Open Sans", sans-serif;
 }
 .projects-button:hover {

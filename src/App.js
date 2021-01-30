@@ -42,6 +42,8 @@ const App = () => {
             ScrollLink="Bitcoin"
             Video={bitcoin}
             ProjectTitle="Project Bitcoin"
+            CodeLink="https://github.com/JoshuaDinh/CryptoCurrency-WebSite"
+            DemoLink="http://www.joshuadinh.tech/crypto/"
           />
           <ProjectWrapper
             DescriptionText={<CovidDesc />}
@@ -49,6 +51,8 @@ const App = () => {
             ScrollLink="Covid"
             Video={covid}
             ProjectTitle="Project Covid"
+            CodeLink="https://github.com/JoshuaDinh/Covid-19"
+            DemoLink="http://www.joshuadinh.tech/covid19/"
           />
           <ProjectWrapper
             DescriptionText={<NetflixDesc />}
@@ -56,6 +60,8 @@ const App = () => {
             ScrollLink="Netflix"
             Video={netflix}
             ProjectTitle="Project Netflix"
+            CodeLink="https://github.com/JoshuaDinh/Netflix"
+            DemoLink=""
           />
         </div>
       </div>
