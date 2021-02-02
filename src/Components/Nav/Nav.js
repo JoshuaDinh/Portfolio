@@ -26,7 +26,6 @@ export const Nav = () => {
           <span className="highlight-text">d</span>
         </div>
         <div className="nav-icons">
-          <AttachMoneyIcon />
           <Avatar>JD</Avatar>
         </div>
       </div>

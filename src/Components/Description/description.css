@@ -10,6 +10,7 @@
   );
   width: 45vw;
   height: 40vh;
+
   overflow-y: scroll;
   animation: borderTop 3s ease infinite, borderRight 3s ease infinite,
     borderBottom 3s ease infinite, borderLeft 3s ease infinite;
