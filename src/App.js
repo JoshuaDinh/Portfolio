@@ -5,8 +5,9 @@ import covid from "./imgs/covid-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
-import { Drawer } from "./Components/Drawer/Drawer";
 import { Nav } from "./Components/Nav/Nav";
+import { MobileNav } from "./Components/Nav/MobileNav";
+import { Header } from "./Components/Header/Header";
 import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import { BitcoinDesc } from "../src/Components/Description/DescriptionText";
 import { CovidDesc } from "../src/Components/Description/DescriptionText";
@@ -17,6 +18,7 @@ import { NetflixSkills } from "./Components/Technology/TechnologyText";
 
 const App = () => {
   const [aboutMeModal, setAboutMeModal] = useState(false);
+  const [toggleMobileNav, setToggleMobileNav] = useState(false);
 
   // Hides overflow until opening animation is complete
   useEffect(() => {
@@ -32,9 +34,19 @@ const App = () => {
       {aboutMeModal === true ? (
         <AboutMe setAboutMeModal={setAboutMeModal} />
       ) : null}
-      <Nav />
+      <Header
+        toggleMobileNav={toggleMobileNav}
+        setToggleMobileNav={setToggleMobileNav}
+      />{" "}
+      {toggleMobileNav && (
+        <MobileNav
+          toggleMobileNav={toggleMobileNav}
+          setToggleMobileNav={setToggleMobileNav}
+        />
+      )}
       <div className="app-content-container">
-        <Drawer setAboutMeModal={setAboutMeModal} />
+        <Nav setAboutMeModal={setAboutMeModal} />
+
         <div className="app-content">
           <ProjectWrapper
             DescriptionText={<BitcoinDesc />}

@@ -4,7 +4,11 @@ import ClearIcon from "@material-ui/icons/Clear";
 
 const AboutMe = ({ setAboutMeModal }) => {
   return (
-    <div onClick={() => setAboutMeModal(false)} className="about-me">
+    <div
+      id="AboutMe"
+      onClick={() => setAboutMeModal(false)}
+      className="about-me"
+    >
       <div className="about-me-modal">
         <div className="about-me-close-button">
           <ClearIcon />

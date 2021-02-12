@@ -39,3 +39,9 @@
   list-style: none;
   animation: borderBottom 3s ease infinite;
 }
+
+@media only screen and (max-width: 850px) {
+  .tech-used {
+    width: 100%;
+  }
+}

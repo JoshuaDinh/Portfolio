@@ -1,0 +1,47 @@
+.header-container {
+  position: relative;
+  z-index: 100;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
+  position: fixed;
+  background-color: white;
+  animation: nav 3s forwards;
+  animation-delay: 6s;
+  transform: translateX(-150%);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.header-title-container {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  font-family: "Megrim";
+}
+
+.header-menu-icon {
+  display: none !important;
+}
+.menu-icon-container {
+  display: none;
+  height: 20px;
+}
+
+.menu-icon {
+  height: 2px;
+  width: 30px;
+  background: #61dbfb;
+}

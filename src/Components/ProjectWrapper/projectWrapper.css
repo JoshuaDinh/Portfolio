@@ -7,11 +7,11 @@
 }
 
 .projects-buttons-container {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  top: 50%;
+  top: -80px;
 }
 .projects-button {
   padding: 0.6em;
@@ -21,7 +21,7 @@
   color: white;
   background-color: rgba(71, 71, 71, 0.8);
   cursor: pointer;
-  margin: 0 1%;
+  margin: 0 2%;
   outline: none;
 }
 .projects-button-link {
