@@ -1,0 +1,43 @@
+/* about project */
+@media only screen and (max-width: 850px) {
+  .about-project {
+    flex-direction: column;
+  }
+}
+
+/* description */
+@media only screen and (max-width: 850px) {
+  .description {
+    width: 100%;
+  }
+}
+
+/* nav-header */
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .nav-container {
+    display: none;
+  }
+  .mobile-nav {
+    display: inline;
+  }
+  .menu-icon-container {
+    display: grid !important;
+  }
+  .header-avatar-icon {
+    display: none !important;
+  }
+}
+
+/* tech */
+@media only screen and (max-width: 850px) {
+  .tech-used {
+    width: 100%;
+  }
+}

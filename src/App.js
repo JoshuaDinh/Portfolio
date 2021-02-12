@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import "./mediaqueries.css";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import covid from "./imgs/covid-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
