@@ -12,6 +12,7 @@ import mandala9 from "../../mandala/9.png";
 import mandala10 from "../../mandala/10.png";
 import mandala11 from "../../mandala/11.png";
 import mandala12 from "../../mandala/12.png";
+import logo from "../../imgs/react-logo.png";
 
 export const OpeningAnimation = () => {
   return (
@@ -39,3 +40,22 @@ export const OpeningAnimation = () => {
     </div>
   );
 };
+
+{
+  /* <img className="mandala-drop" alt="mandala" src={mandala1} />
+      <img className="mandala-drop" alt="mandala" src={mandala2} />
+      <img className="mandala-drop" alt="mandala" src={mandala3} />
+      <img className="mandala-drop" alt="mandala" src={mandala4} />
+      <img className="mandala-drop" alt="mandala" src={mandala5} />
+      <img className="mandala-drop" alt="mandala" src={mandala6} />
+      <img className="mandala-drop" alt="mandala" src={mandala7} />
+      <img className="mandala-drop" alt="mandala" src={mandala8} />
+      <img className="mandala-drop" alt="mandala" src={mandala9} />
+      <img className="mandala-drop" alt="mandala" src={mandala10} />
+      <img className="mandala-drop" alt="mandala" src={mandala11} />
+      <img className="mandala-drop" alt="mandala" src={mandala12} />
+      <img className="mandala-drop" alt="mandala" src={mandala1} />
+      <img className="mandala-drop" alt="mandala" src={mandala2} />
+      <img className="mandala-drop" alt="mandala" src={mandala3} />
+      <img className="mandala-drop" alt="mandala" src={mandala5} /> */
+}
