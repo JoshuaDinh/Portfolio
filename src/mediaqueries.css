@@ -5,13 +5,6 @@
   }
 }
 
-/* description */
-@media only screen and (max-width: 850px) {
-  .description {
-    width: 100%;
-  }
-}
-
 /* nav-header */
 
 @media only screen and (max-width: 600px) {
@@ -20,7 +13,7 @@
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 660px) {
   .nav-container {
     display: none;
   }
@@ -32,12 +25,5 @@
   }
   .header-avatar-icon {
     display: none !important;
-  }
-}
-
-/* tech */
-@media only screen and (max-width: 850px) {
-  .tech-used {
-    width: 100%;
   }
 }
