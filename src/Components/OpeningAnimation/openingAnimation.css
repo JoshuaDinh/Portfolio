@@ -249,3 +249,9 @@ img {
     transform: translate(0, 700%) rotate(1080deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .typewriter h1 {
+    font-size: 42px;
+  }
+}

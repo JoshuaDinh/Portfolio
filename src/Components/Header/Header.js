@@ -8,7 +8,6 @@ import "./header.css";
 export const Header = ({ toggleMobileNav, setToggleMobileNav }) => {
   return (
     <div className="header-container">
-      {" "}
       <div className="header">
         <div className="header-title-container">
           <span className="highlight-text">J</span>
