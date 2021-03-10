@@ -18,9 +18,9 @@ import { CovidSkills } from "./Components/Technology/TechnologyText";
 import { NetflixSkills } from "./Components/Technology/TechnologyText";
 import { connect } from "react-redux";
 
-const App = ({ aboutMe }) => {
+const App = ({ aboutMe, mobileNav }) => {
   // const [aboutMeModal, setAboutMeModal] = useState(false);
-  const [toggleMobileNav, setToggleMobileNav] = useState(false);
+  // const [toggleMobileNav, setToggleMobileNav] = useState(false);
 
   // Hides overflow until opening animation is complete
   useEffect(() => {
@@ -33,15 +33,15 @@ const App = ({ aboutMe }) => {
   return (
     <div className="App">
       <OpeningAnimation />
-      {aboutMe === true ? <AboutMe /> : null}
+      {aboutMe ? <AboutMe /> : null}
       <Header
-        toggleMobileNav={toggleMobileNav}
-        setToggleMobileNav={setToggleMobileNav}
+      // toggleMobileNav={toggleMobileNav}
+      // setToggleMobileNav={setToggleMobileNav}
       />
-      {toggleMobileNav && (
+      {mobileNav && (
         <MobileNav
-          toggleMobileNav={toggleMobileNav}
-          setToggleMobileNav={setToggleMobileNav}
+        // toggleMobileNav={toggleMobileNav}
+        // setToggleMobileNav={setToggleMobileNav}
         />
       )}
       <div className="app-content-container">
@@ -81,7 +81,10 @@ const App = ({ aboutMe }) => {
 };
 
 const mapStateToProps = (state) => {
-  return { aboutMe: state.aboutMe.toggleAboutMeModal };
+  return {
+    aboutMe: state.aboutMe.toggleAboutMeModal,
+    mobileNav: state.mobileNav,
+  };
 };
 
 export default connect(mapStateToProps)(App);

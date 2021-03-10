@@ -2,11 +2,13 @@ import React from "react";
 import NavOption from "./NavOption";
 import resume from "../../imgs/Resume.pdf";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
+import { connect } from "react-redux";
+import { mobileNav } from "../../actions";
 
-const MobileNav = ({ toggleMobileNav, setToggleMobileNav }) => {
+const MobileNav = ({ toggleMobileNav }) => {
   return (
     <div className="mobile-nav">
-      <div onClick={() => setToggleMobileNav(!toggleMobileNav)}>
+      <div onClick={toggleMobileNav}>
         <CancelPresentationIcon className="mobile-nav-close-icon" />
       </div>
       <NavOption title="Project Bitcoin" link="Bitcoin" />
@@ -35,4 +37,15 @@ const MobileNav = ({ toggleMobileNav, setToggleMobileNav }) => {
   );
 };
 
-export default MobileNav;
+const mapStateToProps = (state) => {
+  return {
+    mobileNav: state.mobileNav,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleMobileNav: () => dispatch(mobileNav()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MobileNav);
