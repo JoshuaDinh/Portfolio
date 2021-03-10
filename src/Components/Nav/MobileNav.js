@@ -3,7 +3,7 @@ import NavOption from "./NavOption";
 import resume from "../../imgs/Resume.pdf";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
 import { connect } from "react-redux";
-import { mobileNav } from "../../actions";
+import { toggleMobileNav } from "../../actions";
 
 const MobileNav = ({ toggleMobileNav }) => {
   return (
@@ -39,12 +39,12 @@ const MobileNav = ({ toggleMobileNav }) => {
 
 const mapStateToProps = (state) => {
   return {
-    mobileNav: state.mobileNav,
+    mobileNav: state.mobileNav.state,
   };
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleMobileNav: () => dispatch(mobileNav()),
+    toggleMobileNav: () => dispatch(toggleMobileNav()),
   };
 };
 

@@ -7,7 +7,7 @@ export const toggleAboutMeModal = () => {
   };
 };
 
-export const mobileNav = () => {
+export const toggleMobileNav = () => {
   return {
     type: MOBILE_NAV,
   };

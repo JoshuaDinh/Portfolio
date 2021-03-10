@@ -8,7 +8,7 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
 import { Nav } from "./Components/Nav/Nav";
 import MobileNav from "./Components/Nav/MobileNav";
-import { Header } from "./Components/Header/Header";
+import Header from "./Components/Header/Header";
 import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import { BitcoinDesc } from "../src/Components/Description/DescriptionText";
 import { CovidDesc } from "../src/Components/Description/DescriptionText";
@@ -19,9 +19,6 @@ import { NetflixSkills } from "./Components/Technology/TechnologyText";
 import { connect } from "react-redux";
 
 const App = ({ aboutMe, mobileNav }) => {
-  // const [aboutMeModal, setAboutMeModal] = useState(false);
-  // const [toggleMobileNav, setToggleMobileNav] = useState(false);
-
   // Hides overflow until opening animation is complete
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,16 +31,8 @@ const App = ({ aboutMe, mobileNav }) => {
     <div className="App">
       <OpeningAnimation />
       {aboutMe ? <AboutMe /> : null}
-      <Header
-      // toggleMobileNav={toggleMobileNav}
-      // setToggleMobileNav={setToggleMobileNav}
-      />
-      {mobileNav && (
-        <MobileNav
-        // toggleMobileNav={toggleMobileNav}
-        // setToggleMobileNav={setToggleMobileNav}
-        />
-      )}
+      <Header />
+      {mobileNav && <MobileNav />}
       <div className="app-content-container">
         <Nav />
         <div className="app-content">
