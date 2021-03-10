@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { connect } from "react-redux";
 import { toggleAboutMeModal } from "../../actions";
 
-const NavOption = ({ title, link, setAboutMeModal, toggle }) => {
+const NavOption = ({ title, link, toggle }) => {
   return (
     <Link
       onClick={toggle}
@@ -17,6 +17,7 @@ const NavOption = ({ title, link, setAboutMeModal, toggle }) => {
     </Link>
   );
 };
+
 const mapStateToProps = (state) => {
   return {
     aboutMe: state.aboutMe.toggleAboutMeModal,

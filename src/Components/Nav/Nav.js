@@ -5,14 +5,14 @@ import logo from "../../imgs/react-logo.gif";
 import resume from "../../imgs/Resume.pdf";
 import { connect } from "react-redux";
 
-export const Nav = ({ setAboutMeModal, aboutMe }) => {
+export const Nav = () => {
   return (
     <div className="nav-container">
       <div className="nav">
         <div className="nav-header">
           <img className="nav-logo" src={logo} alt="" />
         </div>
-        <NavOption setAboutMeModal={setAboutMeModal} title="about me" />
+        <NavOption title="about me" />
         <NavOption title="Project Bitcoin" link="Bitcoin" />
         <NavOption title="Project Project Covid" link="Covid" />
         <NavOption title="Project Netflix" link="Netflix" />
@@ -23,7 +23,7 @@ export const Nav = ({ setAboutMeModal, aboutMe }) => {
           rel="noreferrer"
         >
           Resume
-        </a>{" "}
+        </a>
         <a
           className="nav-option"
           href="https://github.com/JoshuaDinh"

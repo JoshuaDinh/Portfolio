@@ -3,11 +3,7 @@ import NavOption from "./NavOption";
 import resume from "../../imgs/Resume.pdf";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
 
-export const MobileNav = ({
-  setAboutMeModal,
-  toggleMobileNav,
-  setToggleMobileNav,
-}) => {
+const MobileNav = ({ toggleMobileNav, setToggleMobileNav }) => {
   return (
     <div className="mobile-nav">
       <div onClick={() => setToggleMobileNav(!toggleMobileNav)}>
@@ -18,7 +14,7 @@ export const MobileNav = ({
       <NavOption title="Project Netflix" link="Netflix" />
       <a className="nav-option" href={resume} target="_blank" rel="noreferrer">
         Resume
-      </a>{" "}
+      </a>
       <a
         className="nav-option"
         href="https://github.com/JoshuaDinh"
@@ -38,3 +34,5 @@ export const MobileNav = ({
     </div>
   );
 };
+
+export default MobileNav;

@@ -1,14 +1,12 @@
 import React from "react";
 import "./aboutMe.css";
 import ClearIcon from "@material-ui/icons/Clear";
+import { connect } from "react-redux";
+import { toggleAboutMeModal } from "../../actions";
 
-const AboutMe = ({ setAboutMeModal }) => {
+const AboutMe = ({ toggle }) => {
   return (
-    <div
-      id="AboutMe"
-      onClick={() => setAboutMeModal(false)}
-      className="about-me"
-    >
+    <div id="AboutMe" onClick={toggle} className="about-me">
       <div className="about-me-modal">
         <div className="about-me-close-button">
           <ClearIcon />
@@ -31,7 +29,7 @@ const AboutMe = ({ setAboutMeModal }) => {
           forward to continuing my journey into the world of software. Born and
           raised in San Diego. If I were to define my passion with one sentence
           it would be that "I am intrigued with finance & inspired by tech!"
-        </p>{" "}
+        </p>
         <button className="about-me-button">
           <span>Thank's for reading</span>
         </button>
@@ -40,4 +38,16 @@ const AboutMe = ({ setAboutMeModal }) => {
   );
 };
 
-export default AboutMe;
+const mapStateToProps = (state) => {
+  return {
+    aboutMe: state.aboutMe.toggleAboutMeModal,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggle: () => dispatch(toggleAboutMeModal()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AboutMe);

@@ -7,7 +7,7 @@ import netflix from "./imgs/netflix-vid.mov";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
 import { Nav } from "./Components/Nav/Nav";
-import { MobileNav } from "./Components/Nav/MobileNav";
+import MobileNav from "./Components/Nav/MobileNav";
 import { Header } from "./Components/Header/Header";
 import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
 import { BitcoinDesc } from "../src/Components/Description/DescriptionText";
@@ -19,7 +19,7 @@ import { NetflixSkills } from "./Components/Technology/TechnologyText";
 import { connect } from "react-redux";
 
 const App = ({ aboutMe }) => {
-  const [aboutMeModal, setAboutMeModal] = useState(false);
+  // const [aboutMeModal, setAboutMeModal] = useState(false);
   const [toggleMobileNav, setToggleMobileNav] = useState(false);
 
   // Hides overflow until opening animation is complete
@@ -33,7 +33,7 @@ const App = ({ aboutMe }) => {
   return (
     <div className="App">
       <OpeningAnimation />
-      {aboutMe === true ? <AboutMe setAboutMeModal={setAboutMeModal} /> : null}
+      {aboutMe === true ? <AboutMe /> : null}
       <Header
         toggleMobileNav={toggleMobileNav}
         setToggleMobileNav={setToggleMobileNav}
@@ -45,7 +45,7 @@ const App = ({ aboutMe }) => {
         />
       )}
       <div className="app-content-container">
-        <Nav setAboutMeModal={setAboutMeModal} />
+        <Nav />
         <div className="app-content">
           <ProjectWrapper
             DescriptionText={<BitcoinDesc />}
