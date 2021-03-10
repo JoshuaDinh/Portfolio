@@ -1,17 +1,13 @@
 import React from "react";
 import "./nav.css";
 import { Link } from "react-scroll";
+import { connect } from "react-redux";
+import { toggleAboutMeModal } from "../../actions";
 
-export const NavOption = ({ title, link, setAboutMeModal }) => {
-  // const handleClick = () => {
-  //   if (setAboutMeModal === true) {
-  //     setAboutMeModal(true);
-  //   }
-  // };
-
+const NavOption = ({ title, link, setAboutMeModal, toggle }) => {
   return (
     <Link
-      onClick={setAboutMeModal ? () => setAboutMeModal(true) : null}
+      onClick={toggle}
       to={link}
       duration={1000}
       smooth={true}
@@ -21,3 +17,15 @@ export const NavOption = ({ title, link, setAboutMeModal }) => {
     </Link>
   );
 };
+const mapStateToProps = (state) => {
+  return {
+    aboutMe: state.aboutMe.toggleAboutMeModal,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggle: () => dispatch(toggleAboutMeModal()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavOption);

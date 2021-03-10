@@ -1,10 +1,11 @@
 import React from "react";
 import "./nav.css";
-import { NavOption } from "./NavOption";
+import NavOption from "./NavOption";
 import logo from "../../imgs/react-logo.gif";
 import resume from "../../imgs/Resume.pdf";
+import { connect } from "react-redux";
 
-export const Nav = ({ setAboutMeModal }) => {
+export const Nav = ({ setAboutMeModal, aboutMe }) => {
   return (
     <div className="nav-container">
       <div className="nav">

@@ -59,10 +59,10 @@
 
 .mobile-nav {
   width: 100vw;
-  z-index: 1;
+  z-index: 1000;
   background: white;
   position: fixed;
-  top: 10%;
+  top: 12%;
   left: 0;
   display: grid;
   justify-content: center;

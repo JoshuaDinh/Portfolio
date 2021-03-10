@@ -1,5 +1,5 @@
 import React from "react";
-import { NavOption } from "./NavOption";
+import NavOption from "./NavOption";
 import resume from "../../imgs/Resume.pdf";
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation";
 

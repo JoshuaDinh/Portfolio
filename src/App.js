@@ -16,8 +16,9 @@ import { NetflixDesc } from "../src/Components/Description/DescriptionText";
 import { BitcoinSkills } from "./Components/Technology/TechnologyText";
 import { CovidSkills } from "./Components/Technology/TechnologyText";
 import { NetflixSkills } from "./Components/Technology/TechnologyText";
+import { connect } from "react-redux";
 
-const App = () => {
+const App = ({ aboutMe }) => {
   const [aboutMeModal, setAboutMeModal] = useState(false);
   const [toggleMobileNav, setToggleMobileNav] = useState(false);
 
@@ -32,13 +33,11 @@ const App = () => {
   return (
     <div className="App">
       <OpeningAnimation />
-      {aboutMeModal === true ? (
-        <AboutMe setAboutMeModal={setAboutMeModal} />
-      ) : null}
+      {aboutMe === true ? <AboutMe setAboutMeModal={setAboutMeModal} /> : null}
       <Header
         toggleMobileNav={toggleMobileNav}
         setToggleMobileNav={setToggleMobileNav}
-      />{" "}
+      />
       {toggleMobileNav && (
         <MobileNav
           toggleMobileNav={toggleMobileNav}
@@ -47,7 +46,6 @@ const App = () => {
       )}
       <div className="app-content-container">
         <Nav setAboutMeModal={setAboutMeModal} />
-
         <div className="app-content">
           <ProjectWrapper
             DescriptionText={<BitcoinDesc />}
@@ -82,4 +80,8 @@ const App = () => {
   );
 };
 
-export default App;
+const mapStateToProps = (state) => {
+  return { aboutMe: state.aboutMe.toggleAboutMeModal };
+};
+
+export default connect(mapStateToProps)(App);
