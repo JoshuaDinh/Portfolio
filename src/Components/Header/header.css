@@ -16,7 +16,8 @@
   background-color: white;
   animation: nav 3s forwards;
   animation-delay: 6s;
-  transform: translateX(-150%);
+  opacity: 0;
+  transform: translateY(-200%);
 }
 
 .header-icons {
