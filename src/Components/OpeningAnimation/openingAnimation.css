@@ -69,8 +69,10 @@ img {
   0% {
     opacity: 1;
   }
+  40% {
+    height: 0;
+  }
   100% {
-    top: 200%;
     opacity: 0;
     z-index: -1000;
   }
