@@ -12,10 +12,12 @@ export const BitcoinDesc = () => {
 export const CovidDesc = () => {
   return (
     <p className="Description-text">
-      A single page application that provides statistics related to Covid-19.
-      Sorting algorithms were used to pull data from an api and list in
-      descending order. The application will use that data and connect it to
-      leaflets api to offer the user a visual experience for the data.
+      This application provides statistics and details for the current impact of
+      Coivd19 around the world. Total Cases, Recovery and Deaths are listed in
+      tables in descending order.A drop down list is available to search for
+      specific areas of impact. The leaflet map offers users an interactive way
+      to view case information and displays colored bubbles in correspondence to
+      the areas statistics.
     </p>
   );
 };
