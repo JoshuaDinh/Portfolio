@@ -65,7 +65,7 @@ body {
   position: relative;
   top: 8%;
   animation: content 4s forwards;
-  animation-delay: 6s;
+  animation-delay: 4s;
   transform: translateY(-30%);
   opacity: 0;
 }

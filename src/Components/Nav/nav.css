@@ -1,6 +1,6 @@
 .nav-container {
   display: flex;
-  width: 25%;
+  width: 22%;
   position: relative;
   top: 10%;
 }
@@ -16,8 +16,8 @@
 }
 
 .nav-logo {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.7em;
+  height: 1.7em;
   position: relative;
 }
 
@@ -34,12 +34,13 @@
     rgba(186, 178, 178, 1) 100%
   );
   border-radius: 5px;
-  margin: 3% 2%;
+  margin: 3% 1%;
+  opacity: 0;
   position: fixed;
   -webkit-box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
   box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
-  animation: nav 2s ease forwards, navExpands 1s forwards;
-  animation-delay: 8s, 10s;
+  animation: nav 2s ease forwards, navExpands 2s forwards;
+  animation-delay: 5s, 8s;
   transform: translateY(-450%);
   overflow: hidden;
 }
@@ -88,7 +89,7 @@
   0% {
   }
   100% {
-    height: 82%;
+    height: 83%;
   }
 }
 

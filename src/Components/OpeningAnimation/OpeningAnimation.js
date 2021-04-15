@@ -17,7 +17,7 @@ import logo from "../../imgs/react-logo.png";
 export const OpeningAnimation = () => {
   return (
     <div>
-      <img className="mandala-drop" alt="mandala" src={mandala1} />
+      {/* <img className="mandala-drop" alt="mandala" src={mandala1} />
       <img className="mandala-drop" alt="mandala" src={mandala2} />
       <img className="mandala-drop" alt="mandala" src={mandala3} />
       <img className="mandala-drop" alt="mandala" src={mandala4} />
@@ -32,7 +32,7 @@ export const OpeningAnimation = () => {
       <img className="mandala-drop" alt="mandala" src={mandala1} />
       <img className="mandala-drop" alt="mandala" src={mandala2} />
       <img className="mandala-drop" alt="mandala" src={mandala3} />
-      <img className="mandala-drop" alt="mandala" src={mandala5} />
+      <img className="mandala-drop" alt="mandala" src={mandala5} /> */}
       <div className="app__opening-header typewriter">
         <h4>Hello My Name Is</h4>
         <h1>Joshua Dinh</h1>

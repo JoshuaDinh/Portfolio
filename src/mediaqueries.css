@@ -1,6 +1,0 @@
-/* about project */
-@media only screen and (max-width: 850px) {
-  .about-project {
-    flex-direction: column;
-  }
-}

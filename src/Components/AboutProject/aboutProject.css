@@ -4,8 +4,8 @@
   margin-top: 3%;
 }
 
-/* @media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   .about-project {
     flex-direction: column;
   }
-} */
+}
