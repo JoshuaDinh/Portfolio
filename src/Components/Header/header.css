@@ -14,10 +14,20 @@
   box-shadow: 5px 5px 21px -5px rgba(0, 0, 0, 0.68);
   position: fixed;
   background-color: white;
-  animation: nav 3s forwards;
-  animation-delay: 6s;
+  animation: header 2s forwards;
+  animation-delay: 4s;
   opacity: 0;
   transform: translateY(-200%);
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header-icons {

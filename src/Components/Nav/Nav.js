@@ -14,7 +14,7 @@ export const Nav = () => {
         </div>
         <NavOption title="about me" />
         <NavOption title="Project Bitcoin" link="Bitcoin" />
-        <NavOption title="Project Project Covid" link="Covid" />
+        <NavOption title="Project Covid19" link="Covid" />
         <NavOption title="Project Netflix" link="Netflix" />
         <a
           className="nav-option"
