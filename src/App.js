@@ -6,7 +6,7 @@ import netflix from "./imgs/netflix-vid.mov";
 import youtube from "./imgs/youtube-vid.mov";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
-import { Nav } from "./Components/Nav/Nav";
+import Nav from "./Components/Nav/Nav";
 import MobileNav from "./Components/Nav/MobileNav";
 import Header from "./Components/Header/Header";
 import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";

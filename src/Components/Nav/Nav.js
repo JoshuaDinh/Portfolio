@@ -3,15 +3,17 @@ import "./nav.css";
 import NavOption from "./NavOption";
 import logo from "../../imgs/react-logo.gif";
 import resume from "../../imgs/Resume.pdf";
+import { toggleAboutMeModal } from "../../actions";
+import { connect } from "react-redux";
 
-export const Nav = () => {
+const Nav = ({ toggle }) => {
   return (
     <div className="nav-container">
       <div className="nav">
         <div className="nav-header">
           <img className="nav-logo" src={logo} alt="" />
         </div>
-        <NavOption title="about me" />
+        <NavOption title="about me" toggle={toggle} />
         <NavOption title="Project Bitcoin" link="Bitcoin" />
         <NavOption title="Project Covid19" link="Covid" />
         <NavOption title="Project Yotube" link="Youtube" />
@@ -44,3 +46,16 @@ export const Nav = () => {
     </div>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+    aboutMe: state.aboutMe.toggleAboutMeModal,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggle: () => dispatch(toggleAboutMeModal()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nav);

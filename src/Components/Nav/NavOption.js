@@ -7,7 +7,7 @@ import { toggleAboutMeModal } from "../../actions";
 const NavOption = ({ title, link, toggle }) => {
   return (
     <Link
-      onClick={toggle}
+      onClick={toggle && toggle}
       to={link}
       duration={1000}
       smooth={true}
@@ -18,15 +18,4 @@ const NavOption = ({ title, link, toggle }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    aboutMe: state.aboutMe.toggleAboutMeModal,
-  };
-};
-const mapDispatchToProps = (dispatch) => {
-  return {
-    toggle: () => dispatch(toggleAboutMeModal()),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(NavOption);
+export default NavOption;
