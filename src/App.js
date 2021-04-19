@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import covid from "./imgs/covid-vid.mov";
@@ -9,12 +9,20 @@ import { Nav } from "./Components/Nav/Nav";
 import MobileNav from "./Components/Nav/MobileNav";
 import Header from "./Components/Header/Header";
 import { OpeningAnimation } from "./Components/OpeningAnimation/OpeningAnimation";
-import { BitcoinDesc } from "../src/Components/Description/DescriptionText";
-import { CovidDesc } from "../src/Components/Description/DescriptionText";
-import { NetflixDesc } from "../src/Components/Description/DescriptionText";
-import { BitcoinSkills } from "./Components/Technology/TechnologyText";
-import { CovidSkills } from "./Components/Technology/TechnologyText";
-import { NetflixSkills } from "./Components/Technology/TechnologyText";
+import {
+  BitcoinDesc,
+  CovidDesc,
+  YoutubeDesc,
+  NetflixDesc,
+} from "../src/Components/Description/DescriptionText";
+
+import {
+  BitcoinSkills,
+  CovidSkills,
+  NetflixSkills,
+  YotubeSkills,
+} from "./Components/Technology/TechnologyText";
+
 import { connect } from "react-redux";
 
 const App = ({ aboutMe, mobileNav }) => {
@@ -52,6 +60,16 @@ const App = ({ aboutMe, mobileNav }) => {
             ProjectTitle="Project Covid"
             CodeLink="https://github.com/JoshuaDinh/Covid-19"
             DemoLink="http://www.joshuadinh.tech/covid19/"
+          />
+
+          <ProjectWrapper
+            DescriptionText={<YoutubeDesc />}
+            SkillsUsedText={<YotubeSkills />}
+            ScrollLink="Youtube Player"
+            Video={netflix}
+            ProjectTitle="Project Youtube"
+            CodeLink="https://github.com/JoshuaDinh/Youtube"
+            DemoLink=""
           />
           <ProjectWrapper
             DescriptionText={<NetflixDesc />}
