@@ -66,7 +66,7 @@ const App = ({ aboutMe, mobileNav }) => {
           <ProjectWrapper
             DescriptionText={<YoutubeDesc />}
             SkillsUsedText={<YotubeSkills />}
-            ScrollLink="Youtube Player"
+            ScrollLink="Youtube"
             Video={youtube}
             ProjectTitle="Project Youtube"
             CodeLink="https://github.com/JoshuaDinh/Youtube"

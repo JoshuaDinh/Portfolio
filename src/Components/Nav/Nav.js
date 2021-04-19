@@ -3,7 +3,6 @@ import "./nav.css";
 import NavOption from "./NavOption";
 import logo from "../../imgs/react-logo.gif";
 import resume from "../../imgs/Resume.pdf";
-import { connect } from "react-redux";
 
 export const Nav = () => {
   return (
@@ -15,6 +14,7 @@ export const Nav = () => {
         <NavOption title="about me" />
         <NavOption title="Project Bitcoin" link="Bitcoin" />
         <NavOption title="Project Covid19" link="Covid" />
+        <NavOption title="Project Yotube" link="Youtube" />
         <NavOption title="Project Netflix" link="Netflix" />
         <a
           className="nav-option"
