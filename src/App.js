@@ -3,6 +3,7 @@ import "./App.css";
 import bitcoin from "./imgs/bitcoin-vid.mov";
 import covid from "./imgs/covid-vid.mov";
 import netflix from "./imgs/netflix-vid.mov";
+import youtube from "./imgs/youtube-vid.mov";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import { ProjectWrapper } from "./Components/ProjectWrapper/ProjectWrapper";
 import { Nav } from "./Components/Nav/Nav";
@@ -66,7 +67,7 @@ const App = ({ aboutMe, mobileNav }) => {
             DescriptionText={<YoutubeDesc />}
             SkillsUsedText={<YotubeSkills />}
             ScrollLink="Youtube Player"
-            Video={netflix}
+            Video={youtube}
             ProjectTitle="Project Youtube"
             CodeLink="https://github.com/JoshuaDinh/Youtube"
             DemoLink=""
