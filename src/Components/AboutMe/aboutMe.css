@@ -29,8 +29,7 @@
   display: grid;
 }
 .about-me-button:hover {
-  background-color: #61dbfb;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
 }
 .about-me-button {
   line-height: 2rem;
@@ -49,7 +48,7 @@
   display: none;
 }
 .about-me-button:hover:before {
-  content: "Close!";
+  content: "Close";
 }
 
 .about-me-button > span {
@@ -63,6 +62,9 @@
   width: 100%;
   color: #61dbfb;
   cursor: pointer;
+}
+.about-me-close-button:hover {
+  color: black;
 }
 
 /* nav */
