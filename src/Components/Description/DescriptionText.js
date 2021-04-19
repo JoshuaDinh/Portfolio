@@ -21,6 +21,7 @@ export const CovidDesc = () => {
     </p>
   );
 };
+
 export const NetflixDesc = () => {
   return (
     <p className="Description-text">
@@ -32,4 +33,8 @@ export const NetflixDesc = () => {
       Youtube Api to give the user the ability to view updated trailers.
     </p>
   );
+};
+
+export const YoutubeDesc = () => {
+  return <p className="Description-text">youtube</p>;
 };
