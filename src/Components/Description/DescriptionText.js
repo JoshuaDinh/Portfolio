@@ -1,10 +1,11 @@
 export const BitcoinDesc = () => {
   return (
     <p className="Description-text">
-      A React dashboard that allows the user to view both historical and current
-      pricing information on a variety of cryptocurrencies. The user also has
-      access to updated news information via a news api. It offers dynamic data
-      visualization and search functionality.
+      A React dashboard with search functionailty that allows users to view both
+      historical and current information on cryptocurrencies. Data retrieved is
+      displayed via tables, bar-charts, pie-charts and line-graphs all powered
+      by Chart.js The user also has access to updated news information via
+      Bloomberg news api and the ability to log in via Google O-auth 2.0
     </p>
   );
 };
