@@ -62,16 +62,17 @@
     rgba(255, 255, 255, 0.7) 75%,
     rgba(97, 219, 251, 1) 100%
   );
-  animation: navigation 2s ease-in-out;
 }
 
-@keyframes navigation {
-  0% {
-    transform-origin: 0vw;
-  }
-  100% {
-    transform-origin: left;
-  }
+.nav-option-active {
+  background: rgb(97, 219, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(97, 219, 251, 1) 0%,
+    rgba(255, 255, 255, 0.7) 25%,
+    rgba(255, 255, 255, 0.7) 75%,
+    rgba(97, 219, 251, 1) 100%
+  );
 }
 
 .mobile-nav {

@@ -8,6 +8,7 @@ export const aboutMeReducer = (state = initialAboutMeState, action) => {
   switch (action.type) {
     case TOGGLE_ABOUT_ME_MODAL:
       return { ...state, toggleAboutMeModal: !state.toggleAboutMeModal };
+
     default:
       return state;
   }

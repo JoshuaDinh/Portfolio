@@ -1,47 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import NavOption from "./NavOption";
 import logo from "../../imgs/react-logo.gif";
-import resume from "../../imgs/Resume.pdf";
 import { toggleAboutMeModal } from "../../actions";
 import { connect } from "react-redux";
 
 const Nav = ({ toggle }) => {
+  const [activeLink, setActiveLink] = useState(1);
+
+  const selectAboutMe = () => {
+    toggle();
+    setActiveLink(1);
+  };
+
   return (
     <div className="nav-container">
       <div className="nav">
         <div className="nav-header">
           <img className="nav-logo" src={logo} alt="" />
         </div>
-        <NavOption title="about me" toggle={toggle} />
-        <NavOption title="Project Bitcoin" link="Bitcoin" />
-        <NavOption title="Project Covid19" link="Covid" />
-        <NavOption title="Project Yotube" link="Youtube" />
-        <NavOption title="Project Netflix" link="Netflix" />
-        {/* <a
-          className="nav-option"
-          href={resume}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Resume
-        </a>
-        <a
-          className="nav-option"
-          href="https://github.com/JoshuaDinh"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>
-        <a
-          className="nav-option"
-          href="https://www.linkedin.com/in/joshuahungdinh/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Linked-In
-        </a> */}
+        <NavOption
+          title="about me"
+          toggle={() => selectAboutMe()}
+          activeLink={activeLink}
+          id={1}
+        />
+        <NavOption
+          title="Project Bitcoin"
+          link="Bitcoin"
+          activeLink={activeLink}
+          toggle={() => setActiveLink(2)}
+          id={2}
+        />
+        <NavOption
+          title="Project Covid19"
+          link="Covid"
+          activeLink={activeLink}
+          toggle={() => setActiveLink(3)}
+          id={3}
+        />
+        <NavOption
+          title="Project Yotube"
+          link="Youtube"
+          activeLink={activeLink}
+          toggle={() => setActiveLink(4)}
+          id={4}
+        />
+        <NavOption
+          title="Project Netflix"
+          link="Netflix"
+          activeLink={activeLink}
+          toggle={() => setActiveLink(5)}
+          id={5}
+        />
       </div>
     </div>
   );

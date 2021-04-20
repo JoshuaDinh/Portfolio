@@ -1,5 +1,4 @@
-import { TOGGLE_ABOUT_ME_MODAL } from "../constants";
-import { MOBILE_NAV } from "../constants";
+import { TOGGLE_ABOUT_ME_MODAL, MOBILE_NAV } from "../constants";
 
 export const toggleAboutMeModal = () => {
   return {
