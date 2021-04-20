@@ -39,7 +39,7 @@ const Header = ({ toggleMobileNav }) => {
             <div className="menu-icon"></div>
           </div>
           <Tooltip title="619-977-3574" TransitionComponent={Zoom} arrow>
-            <a href="tel:6199773574">
+            <a href="tel:6199773574" className="header-tag">
               <IconButton aria-label="contact">
                 <PhoneIcon className="header-icon" />
               </IconButton>
@@ -50,6 +50,7 @@ const Header = ({ toggleMobileNav }) => {
               href="https://github.com/JoshuaDinh"
               target="_blank"
               rel="noreferrer"
+              className="header-tag"
             >
               <IconButton aria-label="github">
                 <GitHubIcon className="header-icon" />
@@ -61,6 +62,7 @@ const Header = ({ toggleMobileNav }) => {
               href="https://www.linkedin.com/in/joshuahungdinh/"
               target="_blank"
               rel="noreferrer"
+              className="header-tag"
             >
               <IconButton aria-label="linked-in">
                 <LinkedInIcon className="header-icon" />
@@ -68,7 +70,12 @@ const Header = ({ toggleMobileNav }) => {
             </a>
           </Tooltip>
           <Tooltip title="Resume" TransitionComponent={Zoom} arrow>
-            <a href={resume} target="_blank" rel="noreferrer">
+            <a
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+              className="header-tag"
+            >
               <IconButton aria-label="resume">
                 <PictureAsPdfIcon className="header-icon" />
               </IconButton>

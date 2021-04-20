@@ -29,6 +29,13 @@
   }
 }
 
+.header-tag {
+  border-bottom: 1px solid transparent;
+}
+.header-tag:hover {
+  border-bottom: 1px solid #61dbfb;
+}
+
 .header-icons {
   display: flex;
   align-items: center;
@@ -45,7 +52,6 @@
 
 .header-icon:hover {
   color: #61dbfb;
-  font-size: 1.8em !important;
 }
 
 .header-title-container {
