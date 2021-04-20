@@ -9,7 +9,7 @@ const NavOption = ({ title, link, toggle, id, activeLink }) => {
       to={link}
       duration={1000}
       smooth={true}
-      className={`nav-option ${id == activeLink && "nav-option-active"}`}
+      className={`nav-option ${id === activeLink && "nav-option-active"}`}
       id={id}
     >
       {title}

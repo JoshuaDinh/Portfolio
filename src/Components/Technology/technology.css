@@ -56,4 +56,5 @@
   object-fit: contain;
   width: 7em;
   height: 7em;
+  cursor: pointer;
 }

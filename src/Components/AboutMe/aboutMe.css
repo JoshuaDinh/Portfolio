@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: absolute;
   padding: 1%;
   width: 50vw;
@@ -26,45 +26,34 @@
 }
 
 .about-me-text {
-  display: grid;
+  font-size: 0.9rem;
+  width: 95%;
+  line-height: 3rem;
+  letter-spacing: 1px;
 }
 .about-me-button:hover {
   border: 1px solid black;
 }
-.about-me-button {
-  line-height: 2rem;
-  min-width: 20%;
-  font-size: 1rem;
-  padding: 1%;
-  border-radius: 5px;
-  border: 1px solid #61dbfb;
-  font-family: "Open Sans", sans-serif;
-  background-color: #ffffff;
-  cursor: pointer;
-  outline: none;
-}
-
-.about-me-button:hover span {
-  display: none;
-}
-.about-me-button:hover:before {
-  content: "Close";
-}
-
-.about-me-button > span {
-  font-family: "Open Sans", sans-serif;
-}
 
 .about-me-close-button {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  color: #61dbfb;
+  position: absolute;
+  top: -10%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    169deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(209, 204, 204, 1) 65%,
+    rgba(186, 178, 178, 1) 100%
+  );
+  border-radius: 50px;
+  padding: 3px;
+  color: black;
   cursor: pointer;
+  font-size: 1.8rem !important;
 }
 .about-me-close-button:hover {
-  color: black;
+  color: #61dbfb;
 }
 
 /* nav */

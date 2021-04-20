@@ -18,14 +18,14 @@ import axiosIcon from "../../imgs/axios-icon.png";
 export const BitcoinSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <img className="techSkills-icon" src={reactIcon} />
-      <img className="techSkills-icon" src={reduxIcon} />
-      <img className="techSkills-icon" src={jsIcon} />
-      <img className="techSkills-icon" src={chartjsIcon} />
-      <img className="techSkills-icon" src={npmIcon} />
-      <img className="techSkills-icon" src={googleIcon} />
-      <img className="techSkills-icon" src={coinGeckoIcon} />
-      <img className="techSkills-icon" src={bloombergIcon} />
+      <img className="techSkills-icon" src={reactIcon} alt="" />
+      <img className="techSkills-icon" src={reduxIcon} alt="" />
+      <img className="techSkills-icon" src={jsIcon} alt="" />
+      <img className="techSkills-icon" src={chartjsIcon} alt="" />
+      <img className="techSkills-icon" src={npmIcon} alt="" />
+      <img className="techSkills-icon" src={googleIcon} alt="" />
+      <img className="techSkills-icon" src={coinGeckoIcon} alt="" />
+      <img className="techSkills-icon" src={bloombergIcon} alt="" />
     </div>
   );
 };
@@ -33,12 +33,12 @@ export const BitcoinSkills = () => {
 export const CovidSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <img className="techSkills-icon" src={reactIcon} />
-      <img className="techSkills-icon" src={jsIcon} />
-      <img className="techSkills-icon" src={npmIcon} />
-      <img className="techSkills-icon" src={leafletIcon} />
-      <img className="techSkills-icon" src={diseaseIcon} />
-      <img className="techSkills-icon" src={numeralIcon} />
+      <img className="techSkills-icon" src={reactIcon} alt="" />
+      <img className="techSkills-icon" src={jsIcon} alt="" />
+      <img className="techSkills-icon" src={npmIcon} alt="" />
+      <img className="techSkills-icon" src={leafletIcon} alt="" />
+      <img className="techSkills-icon" src={diseaseIcon} alt="" />
+      <img className="techSkills-icon" src={numeralIcon} alt="" />
     </div>
   );
 };
@@ -46,12 +46,12 @@ export const CovidSkills = () => {
 export const YotubeSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <img className="techSkills-icon" src={reactIcon} />
-      <img className="techSkills-icon" src={jsIcon} />
-      <img className="techSkills-icon" src={npmIcon} />
-      <img className="techSkills-icon" src={googleIcon} />
-      <img className="techSkills-icon" src={youtubeIcon} />
-      <img className="techSkills-icon" src={materialuiIcon} />
+      <img className="techSkills-icon" src={reactIcon} alt="" />
+      <img className="techSkills-icon" src={jsIcon} alt="" />
+      <img className="techSkills-icon" src={npmIcon} alt="" />
+      <img className="techSkills-icon" src={googleIcon} alt="" />
+      <img className="techSkills-icon" src={youtubeIcon} alt="" />
+      <img className="techSkills-icon" src={materialuiIcon} alt="" />
     </div>
   );
 };
@@ -59,12 +59,12 @@ export const YotubeSkills = () => {
 export const NetflixSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <img className="techSkills-icon" src={reactIcon} />
-      <img className="techSkills-icon" src={jsIcon} />
-      <img className="techSkills-icon" src={npmIcon} />
-      <img className="techSkills-icon" src={tmdbIcon} />
-      <img className="techSkills-icon" src={youtubeIcon} />
-      <img className="techSkills-icon" src={axiosIcon} />
+      <img className="techSkills-icon" src={reactIcon} alt="" />
+      <img className="techSkills-icon" src={jsIcon} alt="" />
+      <img className="techSkills-icon" src={npmIcon} alt="" />
+      <img className="techSkills-icon" src={tmdbIcon} alt="" />
+      <img className="techSkills-icon" src={youtubeIcon} alt="" />
+      <img className="techSkills-icon" src={axiosIcon} alt="" />
     </div>
   );
 };
