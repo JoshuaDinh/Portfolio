@@ -34,7 +34,7 @@
     6px 6px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-img {
+/* img {
   object-fit: cover;
   width: 70vw;
   height: 91vh;
@@ -44,7 +44,7 @@ img {
   animation: openingImage 1s;
   animation-fill-mode: both, forwards, none;
   animation-delay: 6s;
-}
+} */
 
 @keyframes typing {
   0% {

@@ -29,9 +29,11 @@
 }
 
 .techSkills-text-container {
-  align-items: center;
-  justify-content: center;
   height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* overflow-y: scroll; */
 }
 
 .techSkills-text {
@@ -48,4 +50,10 @@
     height: 20%;
     overflow: scroll;
   }
+}
+
+.techSkills-icon {
+  object-fit: contain;
+  width: 27%;
+  height: 27%;
 }
