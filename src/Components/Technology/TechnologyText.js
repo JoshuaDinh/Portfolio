@@ -11,6 +11,9 @@ import leafletIcon from "../../imgs/leaflet-icon.png";
 import diseaseIcon from "../../imgs/disease-icon.png";
 import youtubeIcon from "../../imgs/youtube-icon.png";
 import tmdbIcon from "../../imgs/tmdb-icon.png";
+import materialuiIcon from "../../imgs/materialui-icon.png";
+import numeralIcon from "../../imgs/numeral-icon.png";
+import axiosIcon from "../../imgs/axios-icon.png";
 
 export const BitcoinSkills = () => {
   return (
@@ -35,6 +38,7 @@ export const CovidSkills = () => {
       <img className="techSkills-icon" src={npmIcon} />
       <img className="techSkills-icon" src={leafletIcon} />
       <img className="techSkills-icon" src={diseaseIcon} />
+      <img className="techSkills-icon" src={numeralIcon} />
     </div>
   );
 };
@@ -47,6 +51,7 @@ export const YotubeSkills = () => {
       <img className="techSkills-icon" src={npmIcon} />
       <img className="techSkills-icon" src={googleIcon} />
       <img className="techSkills-icon" src={youtubeIcon} />
+      <img className="techSkills-icon" src={materialuiIcon} />
     </div>
   );
 };
@@ -59,6 +64,7 @@ export const NetflixSkills = () => {
       <img className="techSkills-icon" src={npmIcon} />
       <img className="techSkills-icon" src={tmdbIcon} />
       <img className="techSkills-icon" src={youtubeIcon} />
+      <img className="techSkills-icon" src={axiosIcon} />
     </div>
   );
 };
