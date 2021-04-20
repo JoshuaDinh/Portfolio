@@ -39,7 +39,7 @@ const Header = ({ toggleMobileNav }) => {
             <div className="menu-icon"></div>
           </div>
           <Tooltip title="619-977-3574" TransitionComponent={Zoom} arrow>
-            <a href="tel:6199773574" className="nav-option">
+            <a href="tel:6199773574">
               <IconButton aria-label="contact">
                 <PhoneIcon className="header-icon" />
               </IconButton>
@@ -47,7 +47,6 @@ const Header = ({ toggleMobileNav }) => {
           </Tooltip>
           <Tooltip title="Github" TransitionComponent={Zoom} arrow>
             <a
-              className="nav-option"
               href="https://github.com/JoshuaDinh"
               target="_blank"
               rel="noreferrer"
@@ -59,7 +58,6 @@ const Header = ({ toggleMobileNav }) => {
           </Tooltip>
           <Tooltip title="Linked-in" TransitionComponent={Zoom} arrow>
             <a
-              className="nav-option"
               href="https://www.linkedin.com/in/joshuahungdinh/"
               target="_blank"
               rel="noreferrer"
@@ -70,12 +68,7 @@ const Header = ({ toggleMobileNav }) => {
             </a>
           </Tooltip>
           <Tooltip title="Resume" TransitionComponent={Zoom} arrow>
-            <a
-              className="nav-option"
-              href={resume}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={resume} target="_blank" rel="noreferrer">
               <IconButton aria-label="resume">
                 <PictureAsPdfIcon className="header-icon" />
               </IconButton>
