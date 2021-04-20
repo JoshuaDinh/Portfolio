@@ -18,7 +18,7 @@ const Nav = ({ toggle }) => {
         <NavOption title="Project Covid19" link="Covid" />
         <NavOption title="Project Yotube" link="Youtube" />
         <NavOption title="Project Netflix" link="Netflix" />
-        <a
+        {/* <a
           className="nav-option"
           href={resume}
           target="_blank"
@@ -41,7 +41,7 @@ const Nav = ({ toggle }) => {
           rel="noreferrer"
         >
           Linked-In
-        </a>
+        </a> */}
       </div>
     </div>
   );

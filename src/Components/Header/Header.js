@@ -1,5 +1,4 @@
 import React from "react";
-import Avatar from "@material-ui/core/Avatar";
 import { connect } from "react-redux";
 import { toggleMobileNav } from "../../actions";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -9,6 +8,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 import IconButton from "@material-ui/core/IconButton";
+import resume from "../../imgs/Resume.pdf";
 
 import "./header.css";
 
@@ -39,24 +39,47 @@ const Header = ({ toggleMobileNav }) => {
             <div className="menu-icon"></div>
           </div>
           <Tooltip title="619-977-3574" TransitionComponent={Zoom} arrow>
-            <IconButton aria-label="contact">
-              <PhoneIcon className="header-icon" />
-            </IconButton>
+            <a href="tel:6199773574" className="nav-option">
+              <IconButton aria-label="contact">
+                <PhoneIcon className="header-icon" />
+              </IconButton>
+            </a>
           </Tooltip>
           <Tooltip title="Github" TransitionComponent={Zoom} arrow>
-            <IconButton aria-label="delete">
-              <GitHubIcon className="header-icon" />
-            </IconButton>
+            <a
+              className="nav-option"
+              href="https://github.com/JoshuaDinh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton aria-label="github">
+                <GitHubIcon className="header-icon" />
+              </IconButton>
+            </a>
           </Tooltip>
           <Tooltip title="Linked-in" TransitionComponent={Zoom} arrow>
-            <IconButton aria-label="linked-in">
-              <LinkedInIcon className="header-icon" />
-            </IconButton>
+            <a
+              className="nav-option"
+              href="https://www.linkedin.com/in/joshuahungdinh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton aria-label="linked-in">
+                <LinkedInIcon className="header-icon" />
+              </IconButton>
+            </a>
           </Tooltip>
           <Tooltip title="Resume" TransitionComponent={Zoom} arrow>
-            <IconButton aria-label="resume">
-              <PictureAsPdfIcon className="header-icon" />
-            </IconButton>
+            <a
+              className="nav-option"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton aria-label="resume">
+                <PictureAsPdfIcon className="header-icon" />
+              </IconButton>
+            </a>
           </Tooltip>
         </div>
       </div>
