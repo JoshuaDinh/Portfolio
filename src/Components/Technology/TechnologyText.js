@@ -7,6 +7,10 @@ import npmIcon from "../../imgs/npm-icon.png";
 import coinGeckoIcon from "../../imgs/coingecko-icon.png";
 import bloombergIcon from "../../imgs/bloomberg-icon.png";
 import googleIcon from "../../imgs/google-icon.png";
+import leafletIcon from "../../imgs/leaflet-icon.png";
+import diseaseIcon from "../../imgs/disease-icon.png";
+import youtubeIcon from "../../imgs/youtube-icon.png";
+import tmdbIcon from "../../imgs/tmdb-icon.png";
 
 export const BitcoinSkills = () => {
   return (
@@ -22,48 +26,15 @@ export const BitcoinSkills = () => {
     </div>
   );
 };
-// export const BitcoinSkills = () => {
-//   return (
-//     <div className="techSkills-text-container">
-//       <ul>
-//         <li className="techSkills-text">React / hooks</li>
-//         <li className="techSkills-text">Javascript ES6+</li>
-//         <li className="techSkills-text">Chart.Js</li>
-//         <li className="techSkills-text">Coingecko Api</li>
-//         <li className="techSkills-text">Bloomberg Api</li>
-//         <li className="techSkills-text">JSX</li>
-//         <li className="techSkills-text">HTML / CSS</li>
-//       </ul>
-//     </div>
-//   );
-// };
 
 export const CovidSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <ul>
-        <li className="techSkills-text">React / hooks</li>
-        <li className="techSkills-text">Javascript ES6+</li>
-        <li className="techSkills-text">React-Leaflet(map)</li>
-        <li className="techSkills-text">Disease.sh Api</li>
-        <li className="techSkills-text">JSX</li>
-        <li className="techSkills-text">HTML / CSS</li>
-      </ul>
-    </div>
-  );
-};
-
-export const NetflixSkills = () => {
-  return (
-    <div className="techSkills-text-container">
-      <ul>
-        <li className="techSkills-text">React / hooks</li>
-        <li className="techSkills-text">Javascript ES6+</li>
-        <li className="techSkills-text">Youtube/Google Api</li>
-        <li className="techSkills-text">TMDB Api</li>
-        <li className="techSkills-text">JSX</li>
-        <li className="techSkills-text">HTML / CSS</li>
-      </ul>
+      <img className="techSkills-icon" src={reactIcon} />
+      <img className="techSkills-icon" src={jsIcon} />
+      <img className="techSkills-icon" src={npmIcon} />
+      <img className="techSkills-icon" src={leafletIcon} />
+      <img className="techSkills-icon" src={diseaseIcon} />
     </div>
   );
 };
@@ -71,14 +42,23 @@ export const NetflixSkills = () => {
 export const YotubeSkills = () => {
   return (
     <div className="techSkills-text-container">
-      <ul>
-        <li className="techSkills-text">React / hooks</li>
-        <li className="techSkills-text">Javascript ES6+</li>
-        <li className="techSkills-text">Youtube/Google Api</li>
-        <li className="techSkills-text">Google O-auth 2.0</li>
-        <li className="techSkills-text">JSX</li>
-        <li className="techSkills-text">HTML / CSS</li>
-      </ul>
+      <img className="techSkills-icon" src={reactIcon} />
+      <img className="techSkills-icon" src={jsIcon} />
+      <img className="techSkills-icon" src={npmIcon} />
+      <img className="techSkills-icon" src={googleIcon} />
+      <img className="techSkills-icon" src={youtubeIcon} />
+    </div>
+  );
+};
+
+export const NetflixSkills = () => {
+  return (
+    <div className="techSkills-text-container">
+      <img className="techSkills-icon" src={reactIcon} />
+      <img className="techSkills-icon" src={jsIcon} />
+      <img className="techSkills-icon" src={npmIcon} />
+      <img className="techSkills-icon" src={tmdbIcon} />
+      <img className="techSkills-icon" src={youtubeIcon} />
     </div>
   );
 };
