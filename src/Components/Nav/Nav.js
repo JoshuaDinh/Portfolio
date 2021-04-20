@@ -6,12 +6,7 @@ import { toggleAboutMeModal } from "../../actions";
 import { connect } from "react-redux";
 
 const Nav = ({ toggle }) => {
-  const [activeLink, setActiveLink] = useState(1);
-
-  const selectAboutMe = () => {
-    toggle();
-    setActiveLink(1);
-  };
+  const [activeLink, setActiveLink] = useState(2);
 
   return (
     <div className="nav-container">
@@ -21,7 +16,7 @@ const Nav = ({ toggle }) => {
         </div>
         <NavOption
           title="about me"
-          toggle={() => selectAboutMe()}
+          toggle={toggle}
           activeLink={activeLink}
           id={1}
         />
