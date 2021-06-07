@@ -26,6 +26,9 @@
 
 .Description-text {
   padding: 0 5%;
+  display: flex;
+  align-items: center;
+  line-height: 3em;
 }
 
 /* description */

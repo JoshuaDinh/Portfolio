@@ -11,7 +11,7 @@ const MobileNav = ({ toggleMobileNav }) => {
       <div onClick={toggleMobileNav}>
         <CancelPresentationIcon className="mobile-nav-close-icon" />
       </div>
-      <NavOption title="Project Bitcoin" link="Bitcoin" />
+      <NavOption title="Project Crypto" link="Bitcoin" />
       <NavOption title="Project Project Covid" link="Covid" />
       <NavOption title="Project Netflix" link="Netflix" />
       <a className="nav-option" href={resume} target="_blank" rel="noreferrer">

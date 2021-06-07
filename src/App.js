@@ -49,8 +49,8 @@ const App = ({ aboutMe, mobileNav }) => {
             SkillsUsedText={<BitcoinSkills />}
             ScrollLink="Bitcoin"
             Video={bitcoin}
-            ProjectTitle="Project Bitcoin"
-            CodeLink="https://github.com/JoshuaDinh/CryptoCurrency-WebSite"
+            ProjectTitle="Project Crypto"
+            CodeLink="https://github.com/JoshuaDinh/Crypto-Dashboard"
             DemoLink="http://www.joshuadinh.tech/crypto/"
           />
           <ProjectWrapper

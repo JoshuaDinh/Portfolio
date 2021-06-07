@@ -21,7 +21,7 @@ const Nav = ({ toggle }) => {
           id={1}
         />
         <NavOption
-          title="Project Bitcoin"
+          title="Project Crypto"
           link="Bitcoin"
           activeLink={activeLink}
           toggle={() => setActiveLink(2)}
