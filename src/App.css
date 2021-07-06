@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Playfair Display SC", serif;
   line-height: 150%;
+
   /* font-family: "Open Sans", sans-serif; */
 }
 
@@ -23,16 +24,16 @@ body {
   overflow: visible;
   overflow-x: hidden;
 }
-
 .line-break {
   width: 3%;
   height: 2px;
   background-color: #61dbfb;
   position: relative;
-  top: -250%;
+  top: 375%;
   left: 50%;
-  transform: translate(-50%, -250%);
+  transform: translate(-50%, -375%);
 }
+
 .App {
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -83,7 +84,7 @@ body {
 /* hight lighted text animations */
 
 .highlight-text {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .highlight-text:nth-child(1) {
