@@ -3,11 +3,9 @@ import "./openingAnimation.css";
 
 export const OpeningAnimation = () => {
   return (
-    <div>
-      <div className="app__opening-header typewriter">
-        <h4>Hello My Name Is</h4>
-        <h1>Joshua Dinh</h1>
-      </div>
+    <div className="app__opening-header typewriter">
+      <h1>Loading...</h1>
+      {/* <h1>Joshua Dinh</h1> */}
     </div>
   );
 };

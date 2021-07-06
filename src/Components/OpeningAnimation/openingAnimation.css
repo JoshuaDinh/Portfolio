@@ -24,7 +24,8 @@
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.3s steps(40), blink-caret 0.75s step-end infinite;
+  animation: typing 3.3s steps(40), blink-caret 0.75s step-end infinite,
+    disappering-font 8s forwards;
   color: white;
   font-size: 72px;
   font-family: cursive Black, Gadget, sans-serif;
@@ -69,11 +70,20 @@
   0% {
     opacity: 1;
   }
-  40% {
+  50% {
     height: 0;
   }
   100% {
     opacity: 0;
     z-index: -1000;
+  }
+}
+@keyframes disappering-font {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
