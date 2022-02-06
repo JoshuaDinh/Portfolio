@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+.header {
+  font-size: 6rem;
+}
+.subHeader {
+  margin-top: -2rem;
+}

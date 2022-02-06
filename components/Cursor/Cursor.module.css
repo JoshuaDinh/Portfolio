@@ -1,0 +1,80 @@
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 5px solid rgb(245, 245, 245);
+  background: rgb(245, 245, 245);
+  border-radius: 999px;
+  height: 3rem;
+  width: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  mix-blend-mode: difference;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.cursorTrail {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 999px;
+  z-index: 100;
+  background: rgb(245, 245, 245);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.cursor-transparent {
+  background: none;
+}
+
+.cursor-blend {
+  mix-blend-mode: difference;
+  background: var(--bkg);
+  height: 9em;
+  width: 9em;
+  border: 1px solid black;
+}
+
+.cursor-project {
+  height: 6em;
+  width: 6em;
+  background: rgb(248, 240, 227, 0.85);
+}
+
+.cursor-project-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 999px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.cursor-nav-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 999px;
+  z-index: 1000;
+  border: 1px solid var(--bkg);
+}
+
+.hover-cursor {
+  background: transparent;
+  animation: cursor 0.5s infinite ease-in alternate;
+}
+
+@keyframes cursor {
+  0% {
+  }
+  100% {
+    border: 2px solid black;
+  }
+}
