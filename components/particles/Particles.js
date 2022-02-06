@@ -14,6 +14,7 @@ const ParticlesContainer = () => {
 
   return (
     <Particles
+      id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -32,7 +33,7 @@ const ParticlesContainer = () => {
             onHover: {
               enable: true,
               // Displays the interaction between the links and the cursor
-              mode: "repulse",
+              mode: "bubble",
             },
             resize: true,
           },
@@ -41,7 +42,7 @@ const ParticlesContainer = () => {
               distance: 400,
               duration: 1,
               opacity: 1,
-              size: 50,
+              size: 90,
             },
             push: {
               quantity: 1,
@@ -57,13 +58,13 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: "#000",
+            value: ["#fff"],
           },
           links: {
             color: "",
             distance: 150,
             enable: true,
-            opacity: 1,
+            opacity: 0.5,
             // If active display 1px link otherwise transparent
             width: 1,
           },
@@ -84,7 +85,7 @@ const ParticlesContainer = () => {
               value_area: 800,
             },
             // Amount of particles
-            value: 50,
+            value: 25,
           },
           opacity: {
             value: 1,
