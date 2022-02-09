@@ -1,12 +1,14 @@
 .container {
-  position: sticky;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 10vh;
   max-height: 10vh;
-  padding: 0 2vw;
-  background: rgb(245, 245, 245);
+  padding: 0 3vw;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(245, 245, 245);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   z-index: 1;
 }
@@ -14,5 +16,56 @@
 .wrapper {
   display: flex;
   justify-content: space-evenly;
-  min-width: 20vw;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  font-weight: 800;
+  height: 2.75em;
+  width: 2.75em;
+  border-radius: 999px;
+  border: 2px solid var(--main);
+}
+
+.linkWrapper {
+  position: relative;
+  margin: 0 0.5rem;
+  padding: 10px;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+.linkWrapper:hover {
+  border: 1px solid var(--secondary);
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px;
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.resume:hover {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background: transparent;
+}
+
+.icon {
+  font-size: 1rem !important;
+  margin-left: 10px;
 }
