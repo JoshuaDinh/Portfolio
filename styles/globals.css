@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: whitesmoke;
-  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  background: rgb(0, 0, 0, 0.85);
+  background-attachment: fixed;
+  background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,11 +14,42 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --main: #00e600;
+  --secondary: #ff19ff;
+}
+
 * {
   box-sizing: border-box;
   cursor: none;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
+
+root {
+  --main: #00e600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.75;
+}
+
+section {
+  margin: 0 15%;
+  padding: 5% 0;
+  color: rgb(245, 245, 245);
+}
+
 #tsparticles {
   position: fixed;
   height: 100%;
@@ -30,7 +62,7 @@ a {
   mix-blend-mode: difference;
   opacity: 0;
   animation: particles 1s forwards;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 @keyframes particles {
@@ -39,5 +71,33 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    margin: 0 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin: 0 15%;
+  }
+}
+
+/* @media (min-width: 1280px) {
+  section {
+    margin: 0 20%;
+  }} */
+@media (min-width: 1536px) {
+  section {
+    margin: 0 20%;
   }
 }
