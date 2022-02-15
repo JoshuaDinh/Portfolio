@@ -2,11 +2,27 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: rgb(0, 0, 0, 0.85);
-  background-attachment: fixed;
+  background: var(--bkg);
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(51, 51, 51);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 a {
@@ -15,18 +31,16 @@ a {
 }
 
 :root {
-  --main: #00e600;
+  --main: #3f566e;
   --secondary: #ff19ff;
+  --bkg: #020a13;
 }
 
 * {
   box-sizing: border-box;
   cursor: none;
   font-family: "Montserrat", sans-serif;
-}
-
-root {
-  --main: #00e600;
+  color: #ccd6f6;
 }
 
 h1,
@@ -45,9 +59,11 @@ p {
 }
 
 section {
+  position: relative;
+  min-height: 100vh;
   margin: 0 15%;
-  padding: 5% 0;
-  color: rgb(245, 245, 245);
+  margin-top: 3%;
+  z-index: 1;
 }
 
 #tsparticles {
@@ -77,18 +93,21 @@ section {
 @media (min-width: 640px) {
   section {
     margin: 0 5%;
+    margin-top: 3%;
   }
 }
 
 @media (min-width: 768px) {
   section {
     margin: 0 10%;
+    margin-top: 3%;
   }
 }
 
 @media (min-width: 1024px) {
   section {
     margin: 0 15%;
+    margin-top: 3%;
   }
 }
 
@@ -99,5 +118,6 @@ section {
 @media (min-width: 1536px) {
   section {
     margin: 0 20%;
+    margin-top: 3%;
   }
 }
