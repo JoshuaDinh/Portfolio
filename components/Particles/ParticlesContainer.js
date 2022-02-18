@@ -76,9 +76,9 @@ const ParticlesContainer = () => {
             enable: true,
           },
           move: {
-            direction: "top-left",
+            direction: "bottom-right",
             enable: true,
-            outMode: "destroy",
+            outMode: "out",
             random: false,
             speed: 2,
             straight: false,
@@ -95,11 +95,11 @@ const ParticlesContainer = () => {
             value: 1,
           },
           shape: {
-            type: "square",
+            type: "circle",
           },
           size: {
             random: true,
-            value: 6,
+            value: 2,
           },
         },
         detectRetina: true,

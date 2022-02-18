@@ -29,7 +29,7 @@ const Projects = () => {
   console.log(projects);
   return (
     <motion.section
-      className={styles.container}
+      className={styles.section}
       variants={MainVariant}
       initial="initial"
       animate={controls}
@@ -37,20 +37,23 @@ const Projects = () => {
       id="projects"
     >
       <Title title="Projects" item={MainItem} number="02." />
-      {projects?.map((project, index) => {
-        return (
-          <Card
-            key={index}
-            item={MainItem}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-            github={project.github}
-            website={project.website}
-            image={project.image}
-          />
-        );
-      })}
+      <div className={styles.container}>
+        {" "}
+        {projects?.map((project, index) => {
+          return (
+            <Card
+              key={index}
+              item={MainItem}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+              github={project.github}
+              website={project.website}
+              image={project.image}
+            />
+          );
+        })}
+      </div>
     </motion.section>
   );
 };

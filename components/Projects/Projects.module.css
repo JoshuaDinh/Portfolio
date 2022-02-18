@@ -1,27 +1,6 @@
 .container {
   position: relative;
-  z-index: 1;
-}
-
-.pageHeader {
-  font-size: 2rem;
-}
-
-.pageHeader > span {
-  color: var(--main);
-}
-
-.fixedTitle {
-  position: absolute;
-  top: 15%;
-  right: -35%;
-  font-size: 7rem;
-  opacity: 0.25;
-  transform: rotate(90deg);
-}
-
-@media (max-width: 1024px) {
-  .pageHeader {
-    text-align: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
 }
