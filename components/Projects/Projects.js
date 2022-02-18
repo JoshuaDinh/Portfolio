@@ -37,9 +37,10 @@ const Projects = () => {
       id="projects"
     >
       <Title title="Projects" item={MainItem} number="02." />
-      {projects?.map((project) => {
+      {projects?.map((project, index) => {
         return (
           <Card
+            key={index}
             item={MainItem}
             title={project.title}
             description={project.description}
