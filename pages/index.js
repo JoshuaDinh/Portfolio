@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+          url(&apos;https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap&apos;);
         </style>
       </Head>
       <ParticlesContainer />
