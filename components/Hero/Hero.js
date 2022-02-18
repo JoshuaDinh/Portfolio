@@ -42,7 +42,7 @@ const Hero = () => {
       </motion.h3>
 
       <motion.p className={styles.content} variants={item}>
-        I'm a software engineer that specializes in web development.
+        I&apos;m a software engineer that specializes in web development.
         <hr></hr>
         <span>
           “The Web as I envisaged it, we have not seen it yet. The future is
