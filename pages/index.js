@@ -3,7 +3,7 @@ import Head from "next/head";
 import Cursor from "../components/Cursor/Cursor";
 import Hero from "../components/Hero/Hero";
 import Navigation from "../components/Navigation/Navigation";
-import ParticlesContainer from "../components/Particles/Particles";
+import ParticlesContainer from "../components/Particles/ParticlesContainer";
 import Projects from "../components/Projects/Projects";
 import About from "../components/About/About";
 import Svg from "../components/Svg/Svg";
@@ -12,8 +12,6 @@ import MobileNavigation from "../components/MobileNavigation/MobileNavigation";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
-  const [hover, setHover] = useState(false);
-
   return (
     <>
       <Head>
