@@ -1,0 +1,55 @@
+.container {
+  position: fixed;
+  top: 60%;
+  left: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.svg {
+  color: white !important;
+  margin: 1rem 0;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  height: 3em;
+  width: 3em;
+}
+
+.link:hover {
+  border: 1px solid var(--secondary);
+}
+
+.line {
+  opacity: 0;
+  height: 0rem;
+  border: 1px solid var(--secondary);
+  animation: line 0.5s ease-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes line {
+  0% {
+    height: 0rem;
+  }
+  100% {
+    height: 15rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: none !important;
+  }
+}

@@ -1,7 +1,5 @@
 .container {
   position: relative;
-  display: grid;
-  grid-gap: 2rem;
   z-index: 1;
 }
 
@@ -11,6 +9,15 @@
 
 .pageHeader > span {
   color: var(--main);
+}
+
+.fixedTitle {
+  position: absolute;
+  top: 15%;
+  right: -35%;
+  font-size: 7rem;
+  opacity: 0.25;
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1024px) {

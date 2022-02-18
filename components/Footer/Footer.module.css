@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 15%;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main);
+  border: 1px solid transparent;
+  min-width: 17rem;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.link:hover {
+  border: 1px solid var(--secondary);
+  background: transparent;
+}
+
+.icon {
+  font-size: 2rem !important;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    flex-direction: column;
+    margin: 5%;
+  }
+  .link {
+    margin: 1rem 0;
+  }
+}

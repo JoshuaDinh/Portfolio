@@ -1,32 +1,57 @@
 import React from "react";
 import styles from "./Card.module.css";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 
-const Card = ({ item }) => {
+const Card = ({ item, title, technologies, image, github, website }) => {
   return (
     <motion.div className={styles.container} variants={item}>
       <div className={styles.wrapper}>
         <p className={styles.featuredTitle}>Featured Project:</p>
-        <h3 className={styles.projectName}>Spotify Remote</h3>
-        <p className={styles.projectDescription}>
-          A web app used to connect with a premum Spotify account. It allows
-          users full control and access to their music playlist
-        </p>
-        <ul>
-          <span>-</span>
-          <li>React</li>
-          <li>Javascript</li>
-          <li>Node</li>
-          <li>MongoDB</li>
+        <h3 className={styles.projectName}>{title}</h3>
+        <div className={styles.linkWrapper}>
+          <a
+            className={styles.link}
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Github</span>
+            <GitHubIcon className={styles.icon} />
+          </a>
+          <a
+            className={styles.link}
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Website</span>
+            <OpenInBrowserIcon className={styles.icon} />
+          </a>
+        </div>
+        <ul className={styles.listContainer}>
+          {technologies.map((tech, index) => {
+            return (
+              <li className={styles.listItem} key={index}>
+                <ChevronRightIcon className={styles.listIcon} />
+                {tech}
+              </li>
+            );
+          })}
         </ul>
       </div>
-      <a className={styles.link}>
-        <img
+
+      <div className={styles.imageWrapper}>
+        <Image
           className={styles.image}
-          src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png"
-          alt=""
+          src={image}
+          alt="Project"
+          layout="fill"
         />
-      </a>
+      </div>
     </motion.div>
   );
 };

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import styles from "./Form.module.css";
 import axios from "axios";
 import SendIcon from "@mui/icons-material/Send";
+import { motion } from "framer-motion";
 
-const Form = () => {
+const Form = ({ item }) => {
   const [formData, setFormData] = useState({
     name: "",
     message: "",
@@ -30,9 +31,12 @@ const Form = () => {
       }
     }
   };
-  console.log(formData);
   return (
-    <form className={styles.form} onSubmit={(e) => submitMessage(e, formData)}>
+    <motion.form
+      className={styles.form}
+      onSubmit={(e) => submitMessage(e, formData)}
+      variants={item}
+    >
       <label className={styles.label}>Name</label>
       <input
         className={styles.input}
@@ -68,7 +72,7 @@ const Form = () => {
           <SendIcon className={styles.icon} />
         </button>
       </div>
-    </form>
+    </motion.form>
   );
 };
 

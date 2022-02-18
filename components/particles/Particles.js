@@ -33,22 +33,22 @@ const ParticlesContainer = () => {
             onHover: {
               enable: true,
               // Displays the interaction between the links and the cursor
-              mode: "bubble",
+              mode: ["repulse", "bubble"],
             },
             resize: true,
           },
           modes: {
             bubble: {
-              distance: 400,
+              distance: 250,
               duration: 1,
-              opacity: 1,
-              size: 90,
+              opacity: 0.5,
+              size: 85,
             },
             push: {
-              quantity: 1,
+              quantity: 10,
             },
             repulse: {
-              distance: 200,
+              distance: 170,
               duration: 1,
             },
             grab: {
@@ -58,25 +58,29 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: ["#fff"],
+            value: ["#ff19ff", "#3f566e"],
+          },
+          stroke: {
+            width: 3,
+            color: "#ccd6f6",
           },
           links: {
-            color: "",
-            distance: 150,
+            color: "#ff19ff",
+            distance: 300,
             enable: true,
-            opacity: 0.5,
+            opacity: 1,
             // If active display 1px link otherwise transparent
-            width: 1,
+            width: 0,
           },
           collisions: {
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: "top-left",
             enable: true,
-            outMode: "bounce",
+            outMode: "destroy",
             random: false,
-            speed: 1,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -85,17 +89,17 @@ const ParticlesContainer = () => {
               value_area: 800,
             },
             // Amount of particles
-            value: 25,
+            value: 30,
           },
           opacity: {
             value: 1,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
             random: true,
-            value: 10,
+            value: 6,
           },
         },
         detectRetina: true,
