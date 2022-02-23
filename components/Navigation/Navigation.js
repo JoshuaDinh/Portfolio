@@ -68,9 +68,14 @@ const Navigation = () => {
           </Link>
           <ArrowDropDownIcon className={styles.downIcon} />
         </motion.div>
-        <motion.button variants={item} className={styles.resume}>
+        <motion.a
+          variants={item}
+          className={styles.resume}
+          href="/JoshuaDinhResume.pdf"
+          target="_blank"
+        >
           Resume <FileDownloadIcon className={styles.icon} />
-        </motion.button>
+        </motion.a>
       </motion.div>
     </motion.nav>
   );
