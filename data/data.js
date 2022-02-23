@@ -8,7 +8,7 @@ export const projectData = [
       "Tailwind",
       "Next-auth / O-auth",
     ],
-    image: "/videos/bitcoin-vid.mov",
+    image: "/videos/spotify-vid.mov",
     website: "https://spotify-lyart-phi.vercel.app/login",
     github: "https://github.com/JoshuaDinh/Spotify",
   },
@@ -16,7 +16,7 @@ export const projectData = [
     title: "Digital Asset Dashboard",
     technologies: ["React", "JavaScript", "Chart.js", "CoinGecko API"],
     image: "/videos/bitcoin-vid.mov",
-    website: "",
+    website: "https://joshuadinh-crypto.herokuapp.com/",
     github: "https://github.com/JoshuaDinh/cryptocurrency-dashboard-v.2",
   },
   {
