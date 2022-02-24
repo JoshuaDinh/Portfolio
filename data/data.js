@@ -1,6 +1,6 @@
 export const projectData = [
   {
-    title: "Spotify Remote Connect",
+    title: "Spotify Remote",
 
     technologies: [
       "Next.js",
