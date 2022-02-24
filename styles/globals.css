@@ -98,34 +98,20 @@ section {
   }
   section {
     margin: 0 5%;
-    margin-top: 25%;
   }
 }
 
 /* @media (min-width: 640px) {
-  section {
-    margin: 0 5%;
-    margin-top: 3%;
-  }
+
 }
 
 @media (min-width: 768px) {
-  section {
-    margin: 0 10%;
-    margin-top: 3%;
-  }
+
 }
-
-
 
 @media (min-width: 1280px) {
-  section {
-    margin: 0 20%;
-  }
+ 
 }
 @media (min-width: 1536px) {
-  section {
-    margin: 0 20%;
-    margin-top: 3%;
-  }
+
 } */
