@@ -72,6 +72,14 @@ const About = () => {
               <LanguageIcon className={styles.icon} />
               Tailwind
             </li>
+            <li className={styles.listItem}>
+              <LanguageIcon className={styles.icon} />
+              Firebase
+            </li>
+            <li className={styles.listItem}>
+              <LanguageIcon className={styles.icon} />
+              MySQL
+            </li>
           </motion.ul>
         </motion.div>
       </div>
