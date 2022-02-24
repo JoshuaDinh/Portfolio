@@ -7,7 +7,7 @@
 
 .mainHeader {
   margin: 0px;
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(40px, 5vw, 72px);
 }
 
 .mainHeader > span {
