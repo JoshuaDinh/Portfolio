@@ -16,7 +16,7 @@ export const projectData = [
     title: "Digital Asset Dashboard",
     technologies: ["React", "JavaScript", "Chart.js", "CoinGecko API"],
     image: "/videos/bitcoin-vid.mov",
-    website: "https://joshuadinh-crypto.herokuapp.com/",
+    website: "http://joshuadinh-crypto.herokuapp.com/",
     github: "https://github.com/JoshuaDinh/cryptocurrency-dashboard-v.2",
   },
   {
