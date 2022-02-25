@@ -29,7 +29,7 @@ const Card = ({ item, title, technologies, image, github, website }) => {
           </a>
           <a
             className={styles.website}
-            href={github}
+            href={website}
             target="_blank"
             rel="noopener noreferrer"
           >
